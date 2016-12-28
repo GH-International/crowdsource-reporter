@@ -224,12 +224,18 @@ define([
             }, itemSummaryDiv);
 
 
+            // itemStatusDiv = domConstruct.create("div", {
+            //     "class": "itemTitle",
+            //     "title": 'status',
+            //     "innerHTML": item.attributes.Open_Closed,
+            // }, itemSummaryDiv);
+
+
             if(this.appConfig.supervisor!=undefined){
                 if(this.appConfig.supervisor.toLowerCase()=='true'){
                     
                     favDiv = domConstruct.create("div", {
                         "class": "itemFav",
-                        "click": lang.partial(console.log('poll..' +item)),                      
                         "title": this.i18n.likesForThisItemTooltip
                     }, itemSummaryDiv);
 
@@ -360,7 +366,7 @@ define([
         summaryClick: function (self, feat, evt) {
             // 'this' = row click
             topic.publish("itemSelected", feat);
-            
+
             if(evt.srcElement.className=='itemPollBus'){
                 topic.publish("pollBusiness",feat);
             }
