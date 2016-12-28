@@ -1,5 +1,5 @@
 /*global define,location */
-/*jslint browser:true,sloppy:true,nomen:true,unparam:true,plusplus:true */
+/*jslint sloppy:true */
 /*
  | Copyright 2014 Esri
  |
@@ -15,6 +15,7 @@
  | See the License for the specific language governing permissions and
  | limitations under the License.
  */
+ 
 define({
     //Default configuration settings for the application. This is where you'll define things like a bing maps key,
     //default web map, default app color theme and more. These values can be overwritten by template configuration settings and url parameters.
@@ -30,28 +31,19 @@ define({
     //Template-specific properties in AGOL configuration
     "title": "NOLA Essential Services Polling",
     "titleIcon": "images/banner.png",
-<<<<<<< HEAD
     "displayText": "<b>Welcome to the New Orleans Flood Experiment - Essential Business Polling application</b><p>Use this app to provide information on the status of essential services..</p><p>Search for a location or click an item in the list to get started.</p>",
-=======
-    "displayText": "<b>Welcome to the Crowdsource Polling application</b><p>Use Crowdsource Polling to provide information and collect feedback on plans and issues around your community.</p><p>Search for a location or click an item in the list to get started.</p>",
->>>>>>> origin/master
     "color": "#206bdb",
     /*
     "featureLayer": {
         "id": "LandUseCasesVotesComments_8488",
         "fields": [{
             "id": "sortField",
-<<<<<<< HEAD
             "fields": ["CASEID"]
-=======
-            "fields": ["CASENAME"]
->>>>>>> origin/master
         }, {
             "id": "itemVotesField",
             "fields": ["LASTUPDATE"]
         }]
     },
-<<<<<<< HEAD
     */
     "featureLayer": {
         "id": "LandUseCasesVotesComments_8488",
@@ -66,21 +58,12 @@ define({
     "ascendingSortOrder": true,
     "commentNameField": "Name",
     "allowFacebook": true,
-=======
-    "ascendingSortOrder": true,
-    "commentNameField": "NAME",
-    "allowFacebook": false,
->>>>>>> origin/master
     "facebookAppId": "",
     "allowGoogle": true,
     "googleplusClientId": "",
     "allowTwitter": true,
     "socialMediaDisclaimer": "Choose how you would like to sign in to this application. The name associated with your social media account will be added to any comments you post.",
-<<<<<<< HEAD
     "showDisplayTextAsSplashScreen": true,
-=======
-    "showDisplayTextAsSplashScreen": false,
->>>>>>> origin/master
     // Setup the app to support a custom url parameter. Use this if you want users
     // to be able to search for a string field in a layer. For example if the web map
     // has parcel data and you'd like to be able to zoom to a feature using its parcel id
@@ -104,11 +87,7 @@ define({
     "twitterUserUrl": location.protocol + "//utility.arcgis.com/tproxy/proxy/1.1/account/verify_credentials.json?q=&include_entities=true&skip_status=true&locale=en",
     "twitterCallbackUrl": "/oauth-callback-twitter.html",
 
-<<<<<<< HEAD
     "searchAlwaysExpanded": true, // Whether or not search button is always expanded (always shows its type-in box; true) or is dynamically expanded (false)
-=======
-    "searchAlwaysExpanded": false, // Whether or not search button is always expanded (always shows its type-in box; true) or is dynamically expanded (false)
->>>>>>> origin/master
     "bingKey": "", //Enter the url to your organizations bing maps key if you want to use bing basemaps
     //Defaults to arcgis.com. Set this value to your portal or organization host name.
     "sharinghost": location.protocol + "//" + "www.arcgis.com",

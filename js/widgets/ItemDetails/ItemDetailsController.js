@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 /*global define,dojo,Modernizr */
 /*jslint browser:true,sloppy:true,nomen:true,unparam:true,plusplus:true */
-=======
 /*global Modernizr */
->>>>>>> origin/master
 /*
  | Copyright 2014 Esri
  |
@@ -315,7 +312,6 @@ define([
          * Updates the contents of the votes display div, including applying a class to get a bit
          * more space if needed; hides votes display if votes field is not known.
          */
-<<<<<<< HEAD
         // redrawItemVotes: function () {
         //     if (this.itemVotes) {
         //         if (this.itemVotes.needSpace) {
@@ -326,19 +322,6 @@ define([
         //         domStyle.set(this.itemVotesGroup, 'display', 'none');
         //     }
         // },
-=======
-        redrawItemVotes: function () {
-            if (this.itemVotes) {
-                if (this.itemVotes.needSpace) {
-                    domClass.add(this.itemTitleDiv, "itemDetailTitleOverride");
-                }
-                this.itemVotesDiv.innerHTML = this.itemVotes.label;
-            }
-            else {
-                domStyle.set(this.itemVotesGroup, "display", "none");
-            }
-        },
->>>>>>> origin/master
 
         /**
          * Shows the attachments for the current item if there are any and it is permitted;
@@ -554,7 +537,6 @@ define([
          * that's indicates if an extra digit of room is needed to handle numbers between 99K and 1M, exclusive;
          * returns null if the feature layer's votes field is unknown
          */
-<<<<<<< HEAD
         // getItemVotes: function (item) {
         //     var needSpace = false, votes;
 
@@ -577,46 +559,14 @@ define([
         //     }
         //     return null;
         // },
-=======
-        getItemVotes: function (item) {
-            var needSpace = false,
-                votes;
-
-            if (this.votesField) {
-                votes = item.attributes[this.votesField] || 0;
-                if (votes > 999) {
-                    if (votes > 99999) {
-                        needSpace = true;
-                    }
-                    if (votes > 999999) {
-                        votes = Math.floor(votes / 1000000) + "M";
-                    }
-                    else {
-                        votes = Math.floor(votes / 1000) + "k";
-                    }
-                }
-                return {
-                    "label": votes,
-                    "needSpace": needSpace
-                };
-            }
-            return null;
-        },
->>>>>>> origin/master
 
         /**
          * Completely clears the display for the current item.
          */
         clearItemDisplay: function () {
-<<<<<<< HEAD
             //this.itemTitleDiv.innerHTML = '';
             //this.itemVotesDiv.innerHTML = '';
             this.itemCP.set('content', '');
-=======
-            this.itemTitleDiv.innerHTML = "";
-            this.itemVotesDiv.innerHTML = "";
-            this.itemCP.set("content", "");
->>>>>>> origin/master
         },
 
         /**
@@ -624,13 +574,8 @@ define([
          */
         buildItemDisplay: function () {
             this.itemTitleDiv.innerHTML = this.itemTitle;
-<<<<<<< HEAD
             //this.redrawItemVotes();
             this.itemCP.set('content', this.item.getContent());
-=======
-            this.redrawItemVotes();
-            this.itemCP.set("content", this.item.getContent());
->>>>>>> origin/master
         },
 
         /**
