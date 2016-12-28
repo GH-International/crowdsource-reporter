@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Δεν είναι δυνατή η δημιουργία χάρτη",
-    "zoomInTooltip": "Εστίαση σε μεγαλύτερη κλίμακα",
-    "zoomOutTooltip": "Απομάκρυνση σε μικρότερη κλίμακα",
-    "geolocationTooltip": "Τρέχουσα τοποθεσία"
+    "layerLoad": "Δεν είναι δυνατή η πλήρης φόρτωση του χάρτη",
+    "missingItemsFeatureLayer": "Διαμορφώστε την εφαρμογή ώστε να είναι δυνατή η χρήση feature layer"
   },
-  "main": {
-    "noGroup": "Δεν έχει παραμετροποιηθεί κάποια ομάδα",
-    "submitReportButtonText": "Υποβολή αναφοράς",
-    "gotoListViewTooltip": "Προβολή λίστας",
-    "noFeatureGeomtery": "Δεν είναι δυνατή η εμφάνιση του στοιχείου"
+  "sidebar_header": {
+    "menuButtonTooltip": "Εμφάνιση μενού",
+    "signInButton": "Είσοδος",
+    "signInButtonTooltip": "Είσοδος",
+    "signOutButton": "Έξοδος",
+    "signOutButtonTooltip": "Έξοδος",
+    "helpButtonLabel": "Βοήθεια",
+    "helpButtonTooltip": "Μάθετε περισσότερα",
+    "gotoListViewLabel": "Προβολή λίστας",
+    "gotoListViewTooltip": "Μετάβαση στην προβολή λίστας",
+    "gotoMapViewLabel": "Προβολή χάρτη",
+    "gotoMapViewTooltip": "Μετάβαση στην προβολή χάρτη"
   },
-  "signin": {
-    "guestSigninText": "Συνέχεια ως επισκέπτης",
-    "signInOrText": "Ή",
-    "signinOptionsText": "Σύνδεση με:",
-    "noGroupNameText": "Εισέλθετε",
-    "guestLoginTooltip": "Σύνδεση ως επισκέπτης",
-    "facebookLoginTooltip": "Σύνδεση με Facebook",
-    "twitterLoginTooltip": "Σύνδεση με Twitter",
-    "googlePlusLoginTooltip": "Σύνδεση με Google+",
-    "agolLoginTooltip": "Σύνδεση με ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Κλείσιμο"
   },
-  "webMapList": {
-    "owner": "Κάτοχος",
-    "created": "Ημερομηνία δημιουργίας",
-    "modified": "Ημερομηνία τροποποίησης",
-    "description": "Περιγραφή",
-    "snippet": "Σύνοψη",
-    "licenseInfo": "Περιορισμοί στην πρόσβαση και τη χρήση",
-    "accessInformation": "Συντελεστές",
-    "tags": "Ετικέτες",
-    "numViews": "Αριθμός προβολών",
-    "avgRating": "Αξιολόγηση",
-    "noWebMapInGroup": "Η παραμετροποιημένη ομάδα δεν είναι έγκυρη ή δεν έχει γίνει ακόμη κοινοποίηση στοιχείων σε αυτήν την ομάδα.",
-    "infoBtnToolTip": "Πληροφορίες χάρτη"
+  "social_media": {
+    "signIntoFacebookTooltip": "Σύνδεση με Facebook",
+    "signIntoGooglePlusTooltip": "Σύνδεση με Google+",
+    "signIntoTwitterTooltip": "Σύνδεση με Twitter",
+    "signOutOfFacebookTooltip": "Αποσύνδεση από το Facebook",
+    "signOutOfGooglePlusTooltip": "Αποσύνδεση από το Google+",
+    "signOutOfTwitterTooltip": "Αποσύνδεση από το Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Δεν βρέθηκαν στοιχεία",
-    "noResultsFoundInCurrentBuffer": "Δεν βρέθηκαν στοιχεία κοντά σας",
-    "unableToFetchFeatureError": "Δεν είναι δυνατή η ολοκλήρωση της ενέργειας",
-    "gotoWebmapListTooltip": "Μετάβαση στην κύρια λίστα",
-    "gotoMapViewTooltip": "Προβολή χάρτη"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (προαιρετικά)",
+    "requiredFormItemFlag": " (απαιτούμενο)",
+    "unsettableRequiredField": "Κάποιο απαιτούμενο πεδίο είτε δεν έχει αρχικοποιηθεί είτε δε βρίσκεται στη φόρμα",
+    "countOfRemainingCharactersTooltip": "Χαρακτήρες που απομένουν",
+    "attachmentsHeading": "Đ_Attachments____ớ",
+    "addAttachmentTooltip": "Đ_Add attachment_____ớ",
+    "removeAttachmentTooltip": "Đ_Remove attachment______ớ",
+    "cancelButtonLabel": "Ακύρωση",
+    "submitButtonLabel": "Υποβολή"
   },
-  "appHeader": {
-    "myReport": "Οι αναφορές μου",
-    "signIn": "Είσοδος",
-    "signOut": "Έξοδος",
-    "signInTooltip": "Εισέλθετε",
-    "signOutTooltip": "Έξοδος",
-    "myReportTooltip": "Προβολή των αναφορών μου"
-  },
-  "geoform": {
-    "enterInformation": "ΛΕΠΤΟΜΕΡΕΙΕΣ",
-    "selectAttachments": "Συνημμένα",
-    "selectFileText": "Αναζήτηση",
-    "enterLocation": "Τοποθεσία",
-    "reportItButton": "Αναφορά",
-    "cancelButton": "Ακύρωση",
-    "requiredField": "(απαιτούμενο)",
-    "selectDefaultText": "Επιλέξτε&hellip;",
-    "invalidInputValue": "Εισαγάγετε μια έγκυρη τιμή.",
-    "noFieldsConfiguredMessage": "Τα πεδία του θεματικού επιπέδου δεν έχουν παραμετροποιηθεί για την καταγραφή δεδομένων",
-    "invalidSmallNumber": "Εισαγάγετε έναν ακέραιο αριθμό",
-    "invalidNumber": "Εισαγάγετε έναν ακέραιο αριθμό",
-    "invalidFloat": "Εισαγάγετε έναν αριθμό",
-    "invalidDouble": "Εισαγάγετε έναν αριθμό",
-    "requiredFields": "Δώστε τιμές για όλα τα απαιτούμενα πεδία.",
-    "selectLocation": "Επιλέξτε τη θέση για την αναφορά σας",
-    "numericRangeHintMessage": "${openStrong}Υπόδειξη:${closeStrong} ελάχιστη τιμή ${minValue} και μέγιστη τιμή ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Υπόδειξη:${closeStrong} ελάχιστη ημερομηνία ${minValue} και μέγιστη ημερομηνία ${maxValue}",
-    "errorsInApplyEdits": "Δεν ήταν δυνατή η υποβολή της αναφοράς",
-    "attachmentSelectedMsg": "συνημμένα επιλέχθηκαν",
-    "attachmentUploadStatus": "Απέτυχε η μεταφόρτωση ${failed} από ${total} συνημμένων",
-    "geoLocationError": "Η τρέχουσα τοποθεσία δεν είναι διαθέσιμη",
-    "geoLocationOutOfExtent": "Η τρέχουσα τοποθεσία είναι εκτός της έκτασης του υποβάθρου",
-    "submitButtonTooltip": "Υποβολή",
-    "cancelButtonTooltip": "Ακύρωση",
-    "geoformBackButtonTooltip": "Επιστροφή στη λίστα αναφορών"
-  },
-  "locator": {
-    "addressText": "Διεύθυνση:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Γεωγραφικό πλάτος/Γεωγραφικό μήκος",
-    "invalidSearch": "Δεν βρέθηκαν αποτελέσματα",
-    "locatorPlaceholder": "Εισαγάγετε μια διεύθυνση για αναζήτηση",
-    "locationOutOfExtent": "Η εντοπισμένη διεύθυνση είναι εκτός της έκτασης του υποβάθρου",
-    "searchButtonTooltip": "Αναζήτηση",
-    "clearButtonTooltip": "Απαλοιφή τιμής αναζήτησης"
-  },
-  "myIssues": {
-    "title": "Οι αναφορές μου",
-    "myIssuesTooltip": "Οι αναφορές μου",
-    "noResultsFound": "Δεν βρέθηκαν αναφορές."
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Ψήφος",
-    "likeButtonTooltip": "Ψηφίστε για αυτήν την αναφορά",
-    "commentButtonLabel": "Σχόλιο",
-    "commentButtonTooltip": "Σχολιάστε αυτήν την αναφορά",
-    "galleryButtonLabel": "ΣΥΛΛΟΓΗ",
-    "galleryButtonTooltip": "Δείτε τα συνημμένα έγγραφα",
-    "mapButtonLabel": "Προβολή στο χάρτη",
-    "mapButtonTooltip": "Προβολή της τοποθεσίας αυτής της αναφοράς",
+  "item_details": {
+    "likeButtonTooltip": "Ψηφίστε για αυτό το αντικείμενο",
+    "likeButtonInverseTooltip": "Η ψήφος μετρήθηκε",
+    "commentButtonTooltip": "Προσθήκη σχολίου",
+    "gotoMapViewTooltip": "Μετάβαση στην προβολή χάρτη",
+    "galleryButtonTooltip": "Προβολή συνημμένων αρχείων",
     "commentsListHeading": "Σχόλια",
-    "unableToUpdateVoteField": "Δεν είναι δυνατή η μέτρηση της ψήφου σας αυτήν τη στιγμή.",
-    "gotoIssueListTooltip": "Μετάβαση στη λίστα αναφορών"
+    "noCommentsPlaceholder": "Χωρίς σχόλια"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Ψήφοι για αυτήν την αναφορά",
-    "loadMoreButtonText": "Φόρτωση περισσότερων δεδομένων..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Υποβολή σχολίου",
-    "commentsFormCancelButton": "Ακύρωση",
-    "errorInSubmittingComment": "Δεν ήταν δυνατή η υποβολή του σχολίου.",
-    "emptyCommentMessage": "Εισαγάγετε ένα σχόλιο.",
-    "placeHolderText": "Πληκτρολογήστε ένα σχόλιο",
-    "noCommentsAvailableText": "Δεν υπάρχουν διαθέσιμα σχόλια",
-    "remainingTextCount": "Απομένουν ${0} χαρακτήρες",
-    "showNoText": "Όχι"
-  },
-  "gallery": {
-    "galleryHeaderText": "ΣΥΛΛΟΓΗ",
-    "noAttachmentsAvailableText": "Δεν βρέθηκαν συνημμένα"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Φιλτράρισμα λίστας βάσει χάρτη",
+    "linkToMapViewOptionTooltip": "Αναγραφή στοιχείων που είναι ορατά στον τρέχοντα χάρτη",
+    "likesForThisItemTooltip": "Ψήφοι για αυτό το αντικείμενο"
   }
 });

@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "No se puede crear el mapa",
-    "zoomInTooltip": "Acercar",
-    "zoomOutTooltip": "Alejar",
-    "geolocationTooltip": "Ubicación actual"
+    "layerLoad": "No se puede cargar completamente el mapa",
+    "missingItemsFeatureLayer": "Configura la aplicación para que utilice una capa de entidades."
   },
-  "main": {
-    "noGroup": "No hay ningún grupo configurado",
-    "submitReportButtonText": "Enviar un informe",
-    "gotoListViewTooltip": "Vista de lista",
-    "noFeatureGeomtery": "No se puede mostrar la entidad"
+  "sidebar_header": {
+    "menuButtonTooltip": "Menú Mostrar",
+    "signInButton": "Iniciar sesión",
+    "signInButtonTooltip": "Iniciar sesión",
+    "signOutButton": "Cerrar sesión",
+    "signOutButtonTooltip": "Cerrar sesión",
+    "helpButtonLabel": "Ayuda",
+    "helpButtonTooltip": "Más información",
+    "gotoListViewLabel": "vista de la lista",
+    "gotoListViewTooltip": "Ir a la vista de lista",
+    "gotoMapViewLabel": "Vista del mapa",
+    "gotoMapViewTooltip": "Ir a la vista de mapa"
   },
-  "signin": {
-    "guestSigninText": "Continuar como invitado",
-    "signInOrText": "O",
-    "signinOptionsText": "Inicia sesión con:",
-    "noGroupNameText": "Inicia sesión",
-    "guestLoginTooltip": "Inicia sesión como invitado",
-    "facebookLoginTooltip": "Inicia sesión con Facebook",
-    "twitterLoginTooltip": "Inicia sesión con Twitter",
-    "googlePlusLoginTooltip": "Inicia sesión con Google+",
-    "agolLoginTooltip": "Inicia sesión en ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Cerrar"
   },
-  "webMapList": {
-    "owner": "Propietario",
-    "created": "Fecha creada",
-    "modified": "Fecha de modificación",
-    "description": "Descripción",
-    "snippet": "Resumen",
-    "licenseInfo": "Restricciones de acceso y uso",
-    "accessInformation": "Créditos",
-    "tags": "Etiquetas",
-    "numViews": "Número de vistas",
-    "avgRating": "Calificación",
-    "noWebMapInGroup": "El grupo configurado no es válido o todavía no se han compartido elementos con este grupo.",
-    "infoBtnToolTip": "Información del mapa"
+  "social_media": {
+    "signIntoFacebookTooltip": "Inicia sesión con Facebook",
+    "signIntoGooglePlusTooltip": "Inicia sesión con Google+",
+    "signIntoTwitterTooltip": "Inicia sesión con Twitter",
+    "signOutOfFacebookTooltip": "Cerrar sesión de Facebook",
+    "signOutOfGooglePlusTooltip": "Cerrar sesión de Google+",
+    "signOutOfTwitterTooltip": "Cerrar sesión de Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "No se ha encontrado ninguna entidad",
-    "noResultsFoundInCurrentBuffer": "No se encontraron entidades cerca de ti",
-    "unableToFetchFeatureError": "No se puede completar la operación",
-    "gotoWebmapListTooltip": "Ir a lista principal",
-    "gotoMapViewTooltip": "Vista del mapa"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (opcional)",
+    "requiredFormItemFlag": " (necesario)",
+    "unsettableRequiredField": "Un campo obligatorio no está inicializado ni tiene el formato",
+    "countOfRemainingCharactersTooltip": "Caracteres restantes",
+    "attachmentsHeading": "á_Attachments____Ó",
+    "addAttachmentTooltip": "á_Add attachment_____Ó",
+    "removeAttachmentTooltip": "á_Remove attachment______Ó",
+    "cancelButtonLabel": "Cancelar",
+    "submitButtonLabel": "Enviar"
   },
-  "appHeader": {
-    "myReport": "Mis informes",
-    "signIn": "Iniciar sesión",
-    "signOut": "Cerrar sesión",
-    "signInTooltip": "Iniciar sesión",
-    "signOutTooltip": "Cerrar sesión",
-    "myReportTooltip": "Ver mis informes"
-  },
-  "geoform": {
-    "enterInformation": "Detalles",
-    "selectAttachments": "Adjuntos",
-    "selectFileText": "Examinar",
-    "enterLocation": "Ubicación",
-    "reportItButton": "Informar",
-    "cancelButton": "Cancelar",
-    "requiredField": "(necesario)",
-    "selectDefaultText": "Seleccionar&hellip;",
-    "invalidInputValue": "Introduce un valor válido.",
-    "noFieldsConfiguredMessage": "Los campos de la capa no están configurados para capturar datos",
-    "invalidSmallNumber": "Introduce un entero",
-    "invalidNumber": "Introduce un entero",
-    "invalidFloat": "Por favor, entre un número",
-    "invalidDouble": "Por favor, entre un número",
-    "requiredFields": "Indica valores para todos los campos obligatorios",
-    "selectLocation": "Selecciona la ubicación para el informe",
-    "numericRangeHintMessage": "${openStrong}Sugerencia:${closeStrong} Valor mínimo ${minValue} y valor máximo ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Sugerencia:${closeStrong} Fecha mínima ${minValue} y fecha máxima ${maxValue}",
-    "errorsInApplyEdits": "No se pudo enviar el informe",
-    "attachmentSelectedMsg": "adjuntos seleccionados",
-    "attachmentUploadStatus": "Error al cargar ${failed} de ${total} adjuntos",
-    "geoLocationError": "Ubicación actual no disponible",
-    "geoLocationOutOfExtent": "La ubicación actual está fuera de la extensión del mapa base",
-    "submitButtonTooltip": "Enviar",
-    "cancelButtonTooltip": "Cancelar",
-    "geoformBackButtonTooltip": "Volver a la lista de informes"
-  },
-  "locator": {
-    "addressText": "Dirección:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Latitud/longitud",
-    "invalidSearch": "Ningún resultado encontrado",
-    "locatorPlaceholder": "Introduce una dirección para buscar",
-    "locationOutOfExtent": "La dirección localizada está fuera de la extensión del mapa base",
-    "searchButtonTooltip": "Búsqueda",
-    "clearButtonTooltip": "Borrar valor de búsqueda"
-  },
-  "myIssues": {
-    "title": "Mis informes",
-    "myIssuesTooltip": "Mis informes",
-    "noResultsFound": "No se encontraron informes"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Votar",
-    "likeButtonTooltip": "Votar este informe",
-    "commentButtonLabel": "Comentario",
-    "commentButtonTooltip": "Comentar este informe",
-    "galleryButtonLabel": "Galería",
-    "galleryButtonTooltip": "Ver documentos adjuntos",
-    "mapButtonLabel": "Ver en mapa",
-    "mapButtonTooltip": "Ver la ubicación de este informe",
+  "item_details": {
+    "likeButtonTooltip": "Votar este elemento",
+    "likeButtonInverseTooltip": "Voto contado",
+    "commentButtonTooltip": "Agregar un comentario",
+    "gotoMapViewTooltip": "Ir a la vista de mapa",
+    "galleryButtonTooltip": "Ver archivos adjuntos",
     "commentsListHeading": "Comentarios",
-    "unableToUpdateVoteField": "No es posible contar tu voto en este momento.",
-    "gotoIssueListTooltip": "Ir a lista de informes"
+    "noCommentsPlaceholder": "No hay comentarios"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Vota este informe",
-    "loadMoreButtonText": "Cargar más..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Enviar comentario",
-    "commentsFormCancelButton": "Cancelar",
-    "errorInSubmittingComment": "No se pudo enviar el comentario.",
-    "emptyCommentMessage": "Introduzca un comentario.",
-    "placeHolderText": "Escribe un comentario",
-    "noCommentsAvailableText": "No hay comentarios disponibles",
-    "remainingTextCount": "${0} caracteres restantes",
-    "showNoText": "No"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galería",
-    "noAttachmentsAvailableText": "No se encontraron adjuntos"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtrar lista por mapa",
+    "linkToMapViewOptionTooltip": "Enumerar las entidades visibles en el mapa actual",
+    "likesForThisItemTooltip": "Votos para este elemento"
   }
 });

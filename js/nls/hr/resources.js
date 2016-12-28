@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Nije moguće stvoriti kartu",
-    "zoomInTooltip": "Povećaj",
-    "zoomOutTooltip": "Smanji",
-    "geolocationTooltip": "Trenutačna lokacija"
+    "layerLoad": "Nije moguće učitati kartu do kraja",
+    "missingItemsFeatureLayer": "Konfigurirajte aplikaciju za upotrebu sloja geoobjekata"
   },
-  "main": {
-    "noGroup": "Nema konfiguriranih grupa",
-    "submitReportButtonText": "Podnesi izvješće",
-    "gotoListViewTooltip": "Prikaz u popisu",
-    "noFeatureGeomtery": "Geoobjekt se ne može prikazati"
+  "sidebar_header": {
+    "menuButtonTooltip": "Prikaz izbornika",
+    "signInButton": "Prijava",
+    "signInButtonTooltip": "Prijava",
+    "signOutButton": "Odjava",
+    "signOutButtonTooltip": "Odjava",
+    "helpButtonLabel": "Pomoć",
+    "helpButtonTooltip": "Saznaj više",
+    "gotoListViewLabel": "Prikaz u popisu",
+    "gotoListViewTooltip": "Idi na prikaz u popisu",
+    "gotoMapViewLabel": "Prikaz karte",
+    "gotoMapViewTooltip": "Idi na prikaz karte"
   },
-  "signin": {
-    "guestSigninText": "Nastavi kao gost",
-    "signInOrText": "ili",
-    "signinOptionsText": "Prijava kao:",
-    "noGroupNameText": "Prijavite se",
-    "guestLoginTooltip": "Prijavite se kao gost",
-    "facebookLoginTooltip": "Prijava preko Facebooka",
-    "twitterLoginTooltip": "Prijava preko Twittera",
-    "googlePlusLoginTooltip": "Prijava preko Google+",
-    "agolLoginTooltip": "Prijavite se preko ArcGIS-a"
+  "popup_Close": {
+    "closeButtonTooltip": "Zatvori"
   },
-  "webMapList": {
-    "owner": "Vlasnik",
-    "created": "Datum izrade",
-    "modified": "Datum izmjene",
-    "description": "Opis",
-    "snippet": "Sažetak",
-    "licenseInfo": "Ograničenja pristupa i upotrebe",
-    "accessInformation": "Krediti",
-    "tags": "Oznake",
-    "numViews": "Broj prikaza",
-    "avgRating": "Ocjena",
-    "noWebMapInGroup": "Konfigurirana grupa nije valjana ili s grupom još nisu podijeljene stavke.",
-    "infoBtnToolTip": "Informacije o karti"
+  "social_media": {
+    "signIntoFacebookTooltip": "Prijava preko Facebooka",
+    "signIntoGooglePlusTooltip": "Prijava preko Google+",
+    "signIntoTwitterTooltip": "Prijava preko Twittera",
+    "signOutOfFacebookTooltip": "Odjava s Facebooka",
+    "signOutOfGooglePlusTooltip": "Odjava s Google+",
+    "signOutOfTwitterTooltip": "Odjava s Twittera"
   },
-  "issueWall": {
-    "noResultsFound": "Nema geoobjekata",
-    "noResultsFoundInCurrentBuffer": "Nema geoobjekata u vašoj blizini",
-    "unableToFetchFeatureError": "Nije moguće dovršiti radnju",
-    "gotoWebmapListTooltip": "Idi na glavni popis",
-    "gotoMapViewTooltip": "Prikaz karte"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (neobavezno)",
+    "requiredFormItemFlag": " (obavezno)",
+    "unsettableRequiredField": "Obavezno polje nije ni započeto ni u obrascu",
+    "countOfRemainingCharactersTooltip": "Preostalo znakova",
+    "attachmentsHeading": "Č_Attachments____ž",
+    "addAttachmentTooltip": "Č_Add attachment_____ž",
+    "removeAttachmentTooltip": "Č_Remove attachment______ž",
+    "cancelButtonLabel": "Odustani",
+    "submitButtonLabel": "Pošalji"
   },
-  "appHeader": {
-    "myReport": "Moja izvješća",
-    "signIn": "Prijava",
-    "signOut": "Odjava",
-    "signInTooltip": "Prijava",
-    "signOutTooltip": "Odjava",
-    "myReportTooltip": "Prikaz mojih izvješća"
-  },
-  "geoform": {
-    "enterInformation": "Pojedinosti",
-    "selectAttachments": "Privitci",
-    "selectFileText": "Pregledaj",
-    "enterLocation": "Lokacija",
-    "reportItButton": "Prijavi",
-    "cancelButton": "Odustani",
-    "requiredField": "(obavezno)",
-    "selectDefaultText": "Odabir&hellip;",
-    "invalidInputValue": "Unesite valjanu vrijednost.",
-    "noFieldsConfiguredMessage": "Polja slojeva nisu konfigurirana za prikupljanje podataka",
-    "invalidSmallNumber": "Unesite cijeli broj",
-    "invalidNumber": "Unesite cijeli broj",
-    "invalidFloat": "Unesite broj",
-    "invalidDouble": "Unesite broj",
-    "requiredFields": "Upišite vrijednosti za sva obavezna polja",
-    "selectLocation": "Odaberite lokaciju za izvješće",
-    "numericRangeHintMessage": "${openStrong}Podsjetnik:${closeStrong} minimalna vrijednost ${minValue} i maksimalna vrijednost ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Podsjetnik:${closeStrong} minimalni datum ${minValue} i maksimalni datum ${maxValue}",
-    "errorsInApplyEdits": "Nije moguće podnijeti izvješće.",
-    "attachmentSelectedMsg": "odabrani privitak(-ci)",
-    "attachmentUploadStatus": "${failed} od ${total} privit(a)ka nije poslano",
-    "geoLocationError": "Trenutačna lokacija nije dostupna",
-    "geoLocationOutOfExtent": "Trenutačna lokacija izvan je obuhvata kartografske podloge",
-    "submitButtonTooltip": "Pošalji",
-    "cancelButtonTooltip": "Odustani",
-    "geoformBackButtonTooltip": "Povratak na popis izvješća"
-  },
-  "locator": {
-    "addressText": "Adresa:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Geografska dužina/širina",
-    "invalidSearch": "Nema rezultata",
-    "locatorPlaceholder": "Unesite adresu za pretraživanje",
-    "locationOutOfExtent": "Pronađena adresa izvan je obuhvata kartografske podloge",
-    "searchButtonTooltip": "Pretraži",
-    "clearButtonTooltip": "Očisti vrijednost pretrage"
-  },
-  "myIssues": {
-    "title": "Moja izvješća",
-    "myIssuesTooltip": "Moja izvješća",
-    "noResultsFound": "Nema izvješća"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Glasovanje",
-    "likeButtonTooltip": "Glasaj za ovo izvješće",
-    "commentButtonLabel": "Komentar",
-    "commentButtonTooltip": "Komentiraj ovo izvješće",
-    "galleryButtonLabel": "Galerija",
-    "galleryButtonTooltip": "Vidi priložene dokumente",
-    "mapButtonLabel": "Prikaži na karti",
-    "mapButtonTooltip": "Prikaz lokacije ovog izvješća",
+  "item_details": {
+    "likeButtonTooltip": "Glasaj za ovu stavku",
+    "likeButtonInverseTooltip": "Zbrojeni glasovi",
+    "commentButtonTooltip": "Dodaj komentar",
+    "gotoMapViewTooltip": "Idi na prikaz karte",
+    "galleryButtonTooltip": "Vidi datoteke u privitku",
     "commentsListHeading": "Komentari",
-    "unableToUpdateVoteField": "Vaš se glas trenutačno ne može pribrojiti.",
-    "gotoIssueListTooltip": "Idi na popis izvješća"
+    "noCommentsPlaceholder": "Nema komentara"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Glasovi za ovo izvješće",
-    "loadMoreButtonText": "Učitaj više..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Pošalji komentar",
-    "commentsFormCancelButton": "Odustani",
-    "errorInSubmittingComment": "Nije moguće poslati komentar.",
-    "emptyCommentMessage": "Unesite komentar.",
-    "placeHolderText": "Upišite komentar",
-    "noCommentsAvailableText": "Nema dostupnih komentara",
-    "remainingTextCount": "preostalo ${0} znakova",
-    "showNoText": "Ne"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galerija",
-    "noAttachmentsAvailableText": "Nema privitaka"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtriraj popis prema karti",
+    "linkToMapViewOptionTooltip": "Popis geoobjekata koji su vidljivi na trenutačnoj karti",
+    "likesForThisItemTooltip": "Glasovi za ovu stavku"
   }
 });

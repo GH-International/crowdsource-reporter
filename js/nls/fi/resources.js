@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Karttaa ei voi luoda",
-    "zoomInTooltip": "Lähennä",
-    "zoomOutTooltip": "Loitonna",
-    "geolocationTooltip": "Nykyinen sijainti"
+    "layerLoad": "Kartan lataus kokonaan ei onnistu",
+    "missingItemsFeatureLayer": "Käytä kohdekarttatasoa määrittämällä sovellus"
   },
-  "main": {
-    "noGroup": "Yhtään ryhmää ei ole määritetty",
-    "submitReportButtonText": "Lähetä rapotti",
-    "gotoListViewTooltip": "Luettelonäkymä",
-    "noFeatureGeomtery": "Kohdetta ei voi näyttää"
+  "sidebar_header": {
+    "menuButtonTooltip": "Näytä valikko",
+    "signInButton": "Kirjaudu sisään",
+    "signInButtonTooltip": "Kirjaudu sisään",
+    "signOutButton": "Kirjaudu ulos",
+    "signOutButtonTooltip": "Kirjaudu ulos",
+    "helpButtonLabel": "Ohje",
+    "helpButtonTooltip": "Lisätietoja",
+    "gotoListViewLabel": "Luettelonäkymä",
+    "gotoListViewTooltip": "Siirry luettelonäkymään",
+    "gotoMapViewLabel": "Karttanäkymä",
+    "gotoMapViewTooltip": "Siirry karttanäkymään"
   },
-  "signin": {
-    "guestSigninText": "Jatka käyttöä vierailijana",
-    "signInOrText": "Tai",
-    "signinOptionsText": "Kirjaudu sisään tunnuksella:",
-    "noGroupNameText": "Kirjaudu sisään",
-    "guestLoginTooltip": "Kirjaudu vierailijana",
-    "facebookLoginTooltip": "Kirjaudu sisään Facebook-tunnuksella",
-    "twitterLoginTooltip": "Kirjaudu sisään Twitter-tunnuksella",
-    "googlePlusLoginTooltip": "Kirjaudu sisään Google+-tunnuksella",
-    "agolLoginTooltip": "Kirjaudu sisään ArcGIS-tunnuksella"
+  "popup_Close": {
+    "closeButtonTooltip": "Tallennettu"
   },
-  "webMapList": {
-    "owner": "Omistaja",
-    "created": "Luontipäivämäärä",
-    "modified": "Muokkauspäivämäärä",
-    "description": "Kuvaus",
-    "snippet": "Summary",
-    "licenseInfo": "Käyttörajoitukset",
-    "accessInformation": "Krediitit",
-    "tags": "Tunnisteet",
-    "numViews": "Näkymien määrä",
-    "avgRating": "Arviointi",
-    "noWebMapInGroup": "Määritetty ryhmä on virheellinen tai tämän ryhmän kanssa ei ole vielä jaettu mitään kohteita.",
-    "infoBtnToolTip": "Kartan tiedot"
+  "social_media": {
+    "signIntoFacebookTooltip": "Kirjaudu sisään Facebook-tunnuksella",
+    "signIntoGooglePlusTooltip": "Kirjaudu sisään Google+-tunnuksella",
+    "signIntoTwitterTooltip": "Kirjaudu sisään Twitter-tunnuksella",
+    "signOutOfFacebookTooltip": "Kirjaudu ulos Facebookista",
+    "signOutOfGooglePlusTooltip": "Kirjaudu ulos Google+:sta",
+    "signOutOfTwitterTooltip": "Kirjaudu ulos Twitteristä"
   },
-  "issueWall": {
-    "noResultsFound": "Kohteita ei löytynyt",
-    "noResultsFoundInCurrentBuffer": "Läheltäsi ei löytynyt kohteita",
-    "unableToFetchFeatureError": "Toimintoa ei voi suorittaa loppuun",
-    "gotoWebmapListTooltip": "Siirry pääluetteloon",
-    "gotoMapViewTooltip": "Karttanäkymä"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (valinnainen)",
+    "requiredFormItemFlag": " (pakollinen)",
+    "unsettableRequiredField": "Pakollista kenttää ei ole alustettu eikä sitä ole lomakkeessa",
+    "countOfRemainingCharactersTooltip": "Merkkiä jäljellä",
+    "attachmentsHeading": "Å_Attachments____ö",
+    "addAttachmentTooltip": "Å_Add attachment_____ö",
+    "removeAttachmentTooltip": "Å_Remove attachment______ö",
+    "cancelButtonLabel": "Peruuta",
+    "submitButtonLabel": "Lähetä"
   },
-  "appHeader": {
-    "myReport": "Omat raportit",
-    "signIn": "Kirjaudu sisään",
-    "signOut": "Kirjaudu ulos",
-    "signInTooltip": "Kirjaudu sisään",
-    "signOutTooltip": "Kirjaudu ulos",
-    "myReportTooltip": "Näytä raporttini"
+  "item_details": {
+    "likeButtonTooltip": "ääni tälle kohteelle",
+    "likeButtonInverseTooltip": "Ääni laskettu",
+    "commentButtonTooltip": "Lisää kommentti",
+    "gotoMapViewTooltip": "Siirry karttanäkymään",
+    "galleryButtonTooltip": "Näytä liitetyt tiedostot",
+    "commentsListHeading": "Kommentit",
+    "noCommentsPlaceholder": "Ei kommentteja"
   },
-  "geoform": {
-    "enterInformation": "Yksityiskohdat",
-    "selectAttachments": "Liitteet",
-    "selectFileText": "Selaa",
-    "enterLocation": "Sijainti",
-    "reportItButton": "Raportoi",
-    "cancelButton": "Peruuta",
-    "requiredField": "(pakollinen)",
-    "selectDefaultText": "Valitse&hellip;",
-    "invalidInputValue": "Anna kelvollinen arvo.",
-    "noFieldsConfiguredMessage": "Karttatason kenttiä ei ole määritetty aineiston keräämistä varten",
-    "invalidSmallNumber": "Kirjoita kokonaisluku",
-    "invalidNumber": "Kirjoita kokonaisluku",
-    "invalidFloat": "Kirjoita numero",
-    "invalidDouble": "Kirjoita numero",
-    "requiredFields": "Määritä arvot kaikille pakollisille kentille",
-    "selectLocation": "Valitse raportin sijainti",
-    "numericRangeHintMessage": "${openStrong}Vihje:${closeStrong} Vähimmäisarvo ${minValue} ja enimmäisarvo ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Vihje:${closeStrong} aikaisin ${minValue} ja myöhäisin päivämäärä ${maxValue}",
-    "errorsInApplyEdits": "Raportin lähetys ei onnistunut",
-    "attachmentSelectedMsg": "liite(ttä) on valittu",
-    "attachmentUploadStatus": "${failed}/${total} liitteen lataus epäonnistui",
-    "geoLocationError": "Nykyinen sijainti ei ole käytettävissä",
-    "geoLocationOutOfExtent": "Nykyinen sijainti ei ole taustakartan rajoissa",
-    "submitButtonTooltip": "Lähetä",
-    "cancelButtonTooltip": "Peruuta",
-    "geoformBackButtonTooltip": "Palaa raporttiluetteloon"
-  },
-  "locator": {
-    "addressText": "Osoite:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Leveysaste/Pituusaste",
-    "invalidSearch": "Tuloksia ei löytynyt",
-    "locatorPlaceholder": "Anna haettava osoite",
-    "locationOutOfExtent": "Löydetty osoite ei ole taustakartan rajoissa",
-    "searchButtonTooltip": "Etsi",
-    "clearButtonTooltip": "Tyhjennä etsintäarvo"
-  },
-  "myIssues": {
-    "title": "Omat raportit",
-    "myIssuesTooltip": "Omat raportit",
-    "noResultsFound": "Yhtään raporttia ei löytynyt"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Äänestä",
-    "likeButtonTooltip": "Äänestä tätä raporttia",
-    "commentButtonLabel": "Kommentti",
-    "commentButtonTooltip": "Kommentoi tätä raporttia",
-    "galleryButtonLabel": "Gallery",
-    "galleryButtonTooltip": "Näytä liitetyt dokumentit",
-    "mapButtonLabel": "Näytä kartalla",
-    "mapButtonTooltip": "Näytä tämän raportin sijainti",
-    "commentsListHeading": "Comments",
-    "unableToUpdateVoteField": "Ääntäsi ei voi laskea tällä kertaa.",
-    "gotoIssueListTooltip": "Siirry raporttiluetteloon"
-  },
-  "itemList": {
-    "likesForThisItemTooltip": "Tämän raportin äänet",
-    "loadMoreButtonText": "Lataa lisää..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Lähetä kommentti",
-    "commentsFormCancelButton": "Peruuta",
-    "errorInSubmittingComment": "Kommentin lähetys ei onnistunut.",
-    "emptyCommentMessage": "Kirjoita kommentti.",
-    "placeHolderText": "Kirjoita kommentti",
-    "noCommentsAvailableText": "Yhtään kommenttia ei ole saatavilla",
-    "remainingTextCount": "${0} merkki(ä) jäljellä",
-    "showNoText": "Ei"
-  },
-  "gallery": {
-    "galleryHeaderText": "Gallery",
-    "noAttachmentsAvailableText": "Liitteitä ei löydy."
+  "item_list": {
+    "linkToMapViewOptionLabel": "Suodata luettelo kartan perusteella",
+    "linkToMapViewOptionTooltip": "Luettele kohteet, jotka näkyvät nykyisessä kartassa",
+    "likesForThisItemTooltip": "ääntä tälle kohteelle"
   }
 });

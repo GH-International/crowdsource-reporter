@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "לא ניתן ליצור מפה",
-    "zoomInTooltip": "התמקד פנימה",
-    "zoomOutTooltip": "התמקד החוצה",
-    "geolocationTooltip": "מיקום נוכחי"
+    "layerLoad": "לא ניתן לטעון את המפה במלואה",
+    "missingItemsFeatureLayer": "הגדר את תצורת האפליקציה לשימוש בשכבת ישויות"
   },
-  "main": {
-    "noGroup": "לא הוגדרה קבוצה",
-    "submitReportButtonText": "שלח דו\"ח",
-    "gotoListViewTooltip": "תצוגת רשימה",
-    "noFeatureGeomtery": "לא ניתן להציג את הישות"
+  "sidebar_header": {
+    "menuButtonTooltip": "הצג תפריט",
+    "signInButton": "התחבר",
+    "signInButtonTooltip": "התחבר",
+    "signOutButton": "התנתק",
+    "signOutButtonTooltip": "יציאה",
+    "helpButtonLabel": "עזרה",
+    "helpButtonTooltip": "מידע נוסף",
+    "gotoListViewLabel": "תצוגת רשימה",
+    "gotoListViewTooltip": "עבור לתצוגת רשימה",
+    "gotoMapViewLabel": "תצוגת מפה",
+    "gotoMapViewTooltip": "עבור לתצוגת מפה"
   },
-  "signin": {
-    "guestSigninText": "המשך כאורח",
-    "signInOrText": "או",
-    "signinOptionsText": "התחבר עם:",
-    "noGroupNameText": "אנא התחבר",
-    "guestLoginTooltip": "התחבר כאורח",
-    "facebookLoginTooltip": "התחבר עם Facebook",
-    "twitterLoginTooltip": "התחבר עם טוויטר",
-    "googlePlusLoginTooltip": "התחבר עם Google+‎",
-    "agolLoginTooltip": "התחבר עם ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "סגור"
   },
-  "webMapList": {
-    "owner": "יוצר",
-    "created": "תאריך יצירה",
-    "modified": "תאריך שינוי",
-    "description": "תיאור",
-    "snippet": "סיכום",
-    "licenseInfo": "מגבלות גישה ושימוש",
-    "accessInformation": "קרדיט",
-    "tags": "תגיות",
-    "numViews": "מספר מבטים",
-    "avgRating": "דירוג",
-    "noWebMapInGroup": "הקבוצה שהוגדרה לא חוקית או שלא שותפו עדיין פריטים עם קבוצה זו.",
-    "infoBtnToolTip": "מידע על המפה"
+  "social_media": {
+    "signIntoFacebookTooltip": "התחבר עם Facebook",
+    "signIntoGooglePlusTooltip": "התחבר עם Google+‎",
+    "signIntoTwitterTooltip": "התחבר עם טוויטר",
+    "signOutOfFacebookTooltip": "התנתק מ-Facebook",
+    "signOutOfGooglePlusTooltip": "התנתק מ-Google+‎",
+    "signOutOfTwitterTooltip": "התנתק מ-Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "לא נמצאו ישויות",
-    "noResultsFoundInCurrentBuffer": "לא נמצאו ישויות בסביבתך",
-    "unableToFetchFeatureError": "לא ניתן להשלים את הפעולה",
-    "gotoWebmapListTooltip": "עבור לרשימה הראשית",
-    "gotoMapViewTooltip": "מבט מפה"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (אופציונלי)",
+    "requiredFormItemFlag": " (נדרש)",
+    "unsettableRequiredField": "שדה נדרש כלשהו לא מופעל ולא קיים בטופס",
+    "countOfRemainingCharactersTooltip": "תווים שנותרו",
+    "attachmentsHeading": "כן_Attachments____ש",
+    "addAttachmentTooltip": "כן_Add attachment_____ש",
+    "removeAttachmentTooltip": "כן_Remove attachment______ש",
+    "cancelButtonLabel": "ביטול",
+    "submitButtonLabel": "שלח"
   },
-  "appHeader": {
-    "myReport": "הדוחות שלי",
-    "signIn": "התחבר",
-    "signOut": "התנתק",
-    "signInTooltip": "התחבר",
-    "signOutTooltip": "יציאה",
-    "myReportTooltip": "הצג את הדוחות שלי"
-  },
-  "geoform": {
-    "enterInformation": "פרטים",
-    "selectAttachments": "קישורים",
-    "selectFileText": "נתב",
-    "enterLocation": "מיקום",
-    "reportItButton": "דווח על כך",
-    "cancelButton": "בטל",
-    "requiredField": "(נדרש)",
-    "selectDefaultText": "בחר&hellip;",
-    "invalidInputValue": "הזן ערך חוקי.",
-    "noFieldsConfiguredMessage": "שדות השכבות לא מוגדרים ללכידת נתונים",
-    "invalidSmallNumber": "הזן מספר שלם",
-    "invalidNumber": "הזן מספר שלם",
-    "invalidFloat": "הזן מספר",
-    "invalidDouble": "הזן מספר",
-    "requiredFields": "ציין ערכים בכל שדות החובה",
-    "selectLocation": "בחר מיקום לדוח",
-    "numericRangeHintMessage": "${openStrong}רמז:${closeStrong} ערך מינימום ${minValue} וערך מקסימום ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}רמז:${closeStrong} תאריך מינימום ${minValue} ותאריך מקסימום ${maxValue}",
-    "errorsInApplyEdits": "לא ניתן לשלוח דוח",
-    "attachmentSelectedMsg": "קבצים מצורפים נבחרו",
-    "attachmentUploadStatus": "נכשלה ההעלאה של ${failed} מתוך ${total} קבצים מצורפים",
-    "geoLocationError": "מיקום נוכחי לא זמין",
-    "geoLocationOutOfExtent": "המיקום נוכחי נמצא מחוץ לגבולות מפת הבסיס",
-    "submitButtonTooltip": "שלח",
-    "cancelButtonTooltip": "בטל",
-    "geoformBackButtonTooltip": "חזור לרשימת הדו\"חות"
-  },
-  "locator": {
-    "addressText": "כתובת:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "קו רוחב/אורך",
-    "invalidSearch": "לא נמצאו תוצאות",
-    "locatorPlaceholder": "הזן כתובת לחיפוש",
-    "locationOutOfExtent": "הכתובת שאותרה נמצאת מחוץ לגבולות מפת הבסיס",
-    "searchButtonTooltip": "חפש",
-    "clearButtonTooltip": "נקה ערך חיפוש"
-  },
-  "myIssues": {
-    "title": "הדוחות שלי",
-    "myIssuesTooltip": "הדוחות שלי",
-    "noResultsFound": "לא נמצאו דוחות"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "הצבע",
-    "likeButtonTooltip": "הצבע עבור דוח זה",
-    "commentButtonLabel": "הערה",
-    "commentButtonTooltip": "הוסף תגובה לדוח",
-    "galleryButtonLabel": "גלריה",
-    "galleryButtonTooltip": "ראה מסמכים מצורפים",
-    "mapButtonLabel": "הצג במפה",
-    "mapButtonTooltip": "הצג את מיקום הדוח",
+  "item_details": {
+    "likeButtonTooltip": "הצבע עבור פריט זה",
+    "likeButtonInverseTooltip": "קול נספר",
+    "commentButtonTooltip": "הוסף הערה",
+    "gotoMapViewTooltip": "עבור לתצוגת מפה",
+    "galleryButtonTooltip": "ראה קצבים מצורפים",
     "commentsListHeading": "הערות",
-    "unableToUpdateVoteField": "לא ניתן לקחת בחשבון את ההצבעה שלך כעת.",
-    "gotoIssueListTooltip": "עבור לרשימת הדוחות"
+    "noCommentsPlaceholder": "אין הערות"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "הצבעות לדוח זה",
-    "loadMoreButtonText": "טען עוד..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "שלח תגובה",
-    "commentsFormCancelButton": "בטל",
-    "errorInSubmittingComment": "לא ניתן לשלוח תגובה.",
-    "emptyCommentMessage": "שלח תגובה.",
-    "placeHolderText": "הקלד תגובה",
-    "noCommentsAvailableText": "אין תגובות זמינות",
-    "remainingTextCount": "נותרו ${0} תווים",
-    "showNoText": "לא"
-  },
-  "gallery": {
-    "galleryHeaderText": "גלריה",
-    "noAttachmentsAvailableText": "לא נמצאו קבצים מקושרים"
+  "item_list": {
+    "linkToMapViewOptionLabel": "סנן את הרשימה לפי מפה",
+    "linkToMapViewOptionTooltip": "ציין ישויות שנראות במפה הנוכחית",
+    "likesForThisItemTooltip": "הצבעות עבור פריט זה"
   }
 });

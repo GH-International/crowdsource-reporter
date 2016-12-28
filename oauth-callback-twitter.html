@@ -20,20 +20,13 @@
             margin-left:5px;
         }
     </style>
-    <script type="text/javascript" src="//js.arcgis.com/3.18"></script>
     <script type="text/javascript">
-        require([
-            "dojo/domReady!"
-        ], function () {
-            window.opener.oAuthCallback();
-            window.close();
-            self.close();
-        });
+        window.opener.oAuthCallback();
+        window.close();
+        self.close();
     </script>
 </head>
 <body>
-    <div class="esriCTCallBackMessage">
     Please close this window if it does not close automatically.
-    </div>
 </body>
 </html>

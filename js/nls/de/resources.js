@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Karte kann nicht erstellt werden",
-    "zoomInTooltip": "Vergrößern",
-    "zoomOutTooltip": "Verkleinern",
-    "geolocationTooltip": "Aktueller Standort"
+    "layerLoad": "Karte kann nicht vollständig geladen werden",
+    "missingItemsFeatureLayer": "Konfigurieren Sie die Anwendung für die Verwendung eines Feature-Layers"
   },
-  "main": {
-    "noGroup": "Keine Gruppe konfiguriert",
-    "submitReportButtonText": "Bericht senden",
-    "gotoListViewTooltip": "Listenansicht",
-    "noFeatureGeomtery": "Feature kann nicht angezeigt werden"
+  "sidebar_header": {
+    "menuButtonTooltip": "Menü anzeigen",
+    "signInButton": "Anmelden",
+    "signInButtonTooltip": "Anmelden",
+    "signOutButton": "Abmelden",
+    "signOutButtonTooltip": "Abmelden",
+    "helpButtonLabel": "Hilfe",
+    "helpButtonTooltip": "Weitere Informationen",
+    "gotoListViewLabel": "Listenansicht",
+    "gotoListViewTooltip": "Zur Listenansicht wechseln",
+    "gotoMapViewLabel": "Kartenansicht",
+    "gotoMapViewTooltip": "Zur Kartenansicht wechseln"
   },
-  "signin": {
-    "guestSigninText": "Vorgang als Gast fortsetzen",
-    "signInOrText": "Oder",
-    "signinOptionsText": "Anmelden mit:",
-    "noGroupNameText": "Melden Sie sich an",
-    "guestLoginTooltip": "Als Gast anmelden",
-    "facebookLoginTooltip": "Mit Facebook anmelden",
-    "twitterLoginTooltip": "Mit Twitter anmelden",
-    "googlePlusLoginTooltip": "Mit Google+ anmelden",
-    "agolLoginTooltip": "Mit ArcGIS anmelden"
+  "popup_Close": {
+    "closeButtonTooltip": "Schließen"
   },
-  "webMapList": {
-    "owner": "Besitzer",
-    "created": "Erstellungsdatum",
-    "modified": "Änderungsdatum",
-    "description": "Beschreibung",
-    "snippet": "Zusammenfassung",
-    "licenseInfo": "Zugriffs- und Nutzungsbeschränkungen",
-    "accessInformation": "Quellennachweise",
-    "tags": "Tags",
-    "numViews": "Anzahl der Ansichten",
-    "avgRating": "Bewertung",
-    "noWebMapInGroup": "Die konfigurierte Gruppe ist ungültig oder es wurden noch keine Elemente für diese Gruppe freigegeben.",
-    "infoBtnToolTip": "Karteninformationen"
+  "social_media": {
+    "signIntoFacebookTooltip": "Mit Facebook anmelden",
+    "signIntoGooglePlusTooltip": "Mit Google+ anmelden",
+    "signIntoTwitterTooltip": "Mit Twitter anmelden",
+    "signOutOfFacebookTooltip": "Bei Facebook abmelden",
+    "signOutOfGooglePlusTooltip": "Bei Google+ abmelden",
+    "signOutOfTwitterTooltip": "Bei Twitter abmelden"
   },
-  "issueWall": {
-    "noResultsFound": "Keine Features gefunden",
-    "noResultsFoundInCurrentBuffer": "Keine Features in Ihrer Nähe gefunden",
-    "unableToFetchFeatureError": "Vorgang kann nicht abgeschlossen werden",
-    "gotoWebmapListTooltip": "Zur Hauptliste wechseln",
-    "gotoMapViewTooltip": "Kartenansicht"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (optional)",
+    "requiredFormItemFlag": " (erforderlich)",
+    "unsettableRequiredField": "Ein erforderliches Feld wurde weder initialisiert noch ist es im Formular enthalten",
+    "countOfRemainingCharactersTooltip": "Verbleibende Zeichen",
+    "attachmentsHeading": "ä_Attachments____Ü",
+    "addAttachmentTooltip": "ä_Add attachment_____Ü",
+    "removeAttachmentTooltip": "ä_Remove attachment______Ü",
+    "cancelButtonLabel": "Abbrechen",
+    "submitButtonLabel": "Senden"
   },
-  "appHeader": {
-    "myReport": "Eigene Berichte",
-    "signIn": "Anmelden",
-    "signOut": "Abmelden",
-    "signInTooltip": "Anmelden",
-    "signOutTooltip": "Abmelden",
-    "myReportTooltip": "Eigene Berichte anzeigen"
+  "item_details": {
+    "likeButtonTooltip": "Für dieses Element stimmen",
+    "likeButtonInverseTooltip": "Anzahl der Stimmen",
+    "commentButtonTooltip": "Kommentar hinzufügen",
+    "gotoMapViewTooltip": "Zur Kartenansicht wechseln",
+    "galleryButtonTooltip": "Angehängte Dateien anzeigen",
+    "commentsListHeading": "Kommentare",
+    "noCommentsPlaceholder": "Keine Kommentare"
   },
-  "geoform": {
-    "enterInformation": "Details",
-    "selectAttachments": "Anlagen",
-    "selectFileText": "Durchsuchen",
-    "enterLocation": "Speicherort",
-    "reportItButton": "Melden",
-    "cancelButton": "Abbrechen",
-    "requiredField": "(erforderlich)",
-    "selectDefaultText": "Auswählen&hellip;",
-    "invalidInputValue": "Geben Sie einen gültigen Wert ein.",
-    "noFieldsConfiguredMessage": "Layer-Felder sind nicht für die Erfassung von Daten konfiguriert",
-    "invalidSmallNumber": "Geben Sie einen ganzzahligen Wert ein",
-    "invalidNumber": "Geben Sie einen ganzzahligen Wert ein",
-    "invalidFloat": "Geben Sie eine Zahl ein",
-    "invalidDouble": "Geben Sie eine Zahl ein",
-    "requiredFields": "Geben Sie Werte für alle erforderlichen Felder ein",
-    "selectLocation": "Wählen Sie den Speicherort für Ihren Bericht aus",
-    "numericRangeHintMessage": "${openStrong}Hinweis:${closeStrong} Minimalwert ${minValue} und Maximalwert ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Hinweis:${closeStrong} Mindestdatum ${minValue} und maximal auswählbares Datum ${maxValue}",
-    "errorsInApplyEdits": "Bericht konnte nicht gesendet werden",
-    "attachmentSelectedMsg": "Anlage(n) ausgewählt",
-    "attachmentUploadStatus": "${failed} von ${total} Anlage(n) konnte(n) nicht hochgeladen werden",
-    "geoLocationError": "Aktuelle Position ist nicht verfügbar",
-    "geoLocationOutOfExtent": "Aktuelle Position befindet sich außerhalb der Grundkartenausdehnung",
-    "submitButtonTooltip": "Senden",
-    "cancelButtonTooltip": "Abbrechen",
-    "geoformBackButtonTooltip": "Zur Berichtsliste zurückkehren"
-  },
-  "locator": {
-    "addressText": "Adresse:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Breitengrad/Längengrad",
-    "invalidSearch": "Keine Ergebnisse gefunden",
-    "locatorPlaceholder": "Zu suchende Adresse eingeben",
-    "locationOutOfExtent": "Verortete Adresse befindet sich außerhalb der Grundkartenausdehnung",
-    "searchButtonTooltip": "Suche",
-    "clearButtonTooltip": "Suchwert löschen"
-  },
-  "myIssues": {
-    "title": "Eigene Berichte",
-    "myIssuesTooltip": "Eigene Berichte",
-    "noResultsFound": "Keine Berichte gefunden"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Abstimmen",
-    "likeButtonTooltip": "Für diesen Bericht stimmen",
-    "commentButtonLabel": "Kommentar",
-    "commentButtonTooltip": "Diesen Bericht kommentieren",
-    "galleryButtonLabel": "Galerie",
-    "galleryButtonTooltip": "Angehängte Dokumente anzeigen",
-    "mapButtonLabel": "Auf Karte anzeigen",
-    "mapButtonTooltip": "Speicherort dieses Berichts anzeigen",
-    "commentsListHeading": "Bemerkungen",
-    "unableToUpdateVoteField": "Ihre Stimme kann zurzeit nicht gezählt werden.",
-    "gotoIssueListTooltip": "Zur Berichtsliste wechseln"
-  },
-  "itemList": {
-    "likesForThisItemTooltip": "Stimmen für diesen Bericht",
-    "loadMoreButtonText": "Weitere laden..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Kommentar senden",
-    "commentsFormCancelButton": "Abbrechen",
-    "errorInSubmittingComment": "Kommentar konnte nicht gesendet werden.",
-    "emptyCommentMessage": "Geben Sie einen Kommentar ein.",
-    "placeHolderText": "Kommentar eingeben",
-    "noCommentsAvailableText": "Keine Kommentare verfügbar",
-    "remainingTextCount": "${0} Zeichen verbleiben",
-    "showNoText": "Nein"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galerie",
-    "noAttachmentsAvailableText": "Keine Anlagen gefunden"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Liste nach Karte filtern",
+    "linkToMapViewOptionTooltip": "Features auflisten, die in der aktuellen Karte sichtbar sind",
+    "likesForThisItemTooltip": "Stimmen für dieses Element"
   }
 });

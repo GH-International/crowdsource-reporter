@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Không thể tạo bản đồ",
-    "zoomInTooltip": "Thu nhỏ",
-    "zoomOutTooltip": "Phóng to",
-    "geolocationTooltip": "Vị trí hiện tại"
+    "layerLoad": "Không thể tải đầy đủ bản đồ",
+    "missingItemsFeatureLayer": "Vui lòng cấu hình ứng dụng để sử dụng lớp đối tượng"
   },
-  "main": {
-    "noGroup": "Không có nhóm nào được cấu hình",
-    "submitReportButtonText": "Đệ trình Báo cáo",
-    "gotoListViewTooltip": "Chế độ xem dạng danh sách",
-    "noFeatureGeomtery": "Không thể hiển thị đối tượng"
+  "sidebar_header": {
+    "menuButtonTooltip": "Hiện menu",
+    "signInButton": "Đăng nhập",
+    "signInButtonTooltip": "Đăng nhập",
+    "signOutButton": "Đăng xuất",
+    "signOutButtonTooltip": "Đăng xuất",
+    "helpButtonLabel": "Trợ giúp",
+    "helpButtonTooltip": "Tìm hiểu thêm",
+    "gotoListViewLabel": "Chế độ xem dạng Danh sách",
+    "gotoListViewTooltip": "Đến chế độ xem dạng danh sách",
+    "gotoMapViewLabel": "Chế độ xem Bản đồ",
+    "gotoMapViewTooltip": "Đến chế độ xem bản đồ"
   },
-  "signin": {
-    "guestSigninText": "Tiến hành dưới dạng Khách",
-    "signInOrText": "Hoặc",
-    "signinOptionsText": "Đăng nhập bằng:",
-    "noGroupNameText": "Vui lòng đăng nhập",
-    "guestLoginTooltip": "Đăng nhập với vai trò khách",
-    "facebookLoginTooltip": "Đăng nhập bằng Facebook",
-    "twitterLoginTooltip": "Đăng nhập bằng Twitter",
-    "googlePlusLoginTooltip": "Đăng nhập bằng Google+",
-    "agolLoginTooltip": "Đăng nhập bằng ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Đóng"
   },
-  "webMapList": {
-    "owner": "Chủ sở hữu",
-    "created": "Ngày tạo",
-    "modified": "Ngày sửa đổi",
-    "description": "Mô tả",
-    "snippet": "Tóm tắt",
-    "licenseInfo": "Những ràng buộc về Truy cập và Sử dụng",
-    "accessInformation": "Service Credits",
-    "tags": "Từ khóa",
-    "numViews": "Số lần xem",
-    "avgRating": "Xếp loại",
-    "noWebMapInGroup": "Nhóm được cấu hình không hợp lệ hoặc vẫn chưa có mục nào được chia sẻ với nhóm này.",
-    "infoBtnToolTip": "Thông tin bản đồ"
+  "social_media": {
+    "signIntoFacebookTooltip": "Đăng nhập bằng Facebook",
+    "signIntoGooglePlusTooltip": "Đăng nhập bằng Google+",
+    "signIntoTwitterTooltip": "Đăng nhập bằng Twitter",
+    "signOutOfFacebookTooltip": "Đăng xuất khỏi Facebook",
+    "signOutOfGooglePlusTooltip": "Đăng xuất khỏi Google+",
+    "signOutOfTwitterTooltip": "Đăng xuất khỏi Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Không tìm thấy đối tượng",
-    "noResultsFoundInCurrentBuffer": "Không tìm thấy đối tượng gần bạn",
-    "unableToFetchFeatureError": "Không thể hoàn thành hoạt động",
-    "gotoWebmapListTooltip": "Đến danh sách chính",
-    "gotoMapViewTooltip": "Chế độ xem bản đồ"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (tùy chọn)",
+    "requiredFormItemFlag": " (bắt buộc)",
+    "unsettableRequiredField": "Một trường bắt buộc không được khởi tạo và cũng không có trong mẫu",
+    "countOfRemainingCharactersTooltip": "Ký tự còn lại",
+    "attachmentsHeading": "Đ_Attachments____ớ",
+    "addAttachmentTooltip": "Đ_Add attachment_____ớ",
+    "removeAttachmentTooltip": "Đ_Remove attachment______ớ",
+    "cancelButtonLabel": "Hủy",
+    "submitButtonLabel": "Đệ trình"
   },
-  "appHeader": {
-    "myReport": "Báo cáo của tôi",
-    "signIn": "Đăng nhập",
-    "signOut": "Đăng xuất",
-    "signInTooltip": "Đăng nhập",
-    "signOutTooltip": "Đăng xuất",
-    "myReportTooltip": "Xem báo cáo của tôi"
-  },
-  "geoform": {
-    "enterInformation": "Chi tiết",
-    "selectAttachments": "Tệp đính kèm",
-    "selectFileText": "Duyệt",
-    "enterLocation": "Vị trí",
-    "reportItButton": "Báo cáo Nó",
-    "cancelButton": "Hủy",
-    "requiredField": "(bắt buộc)",
-    "selectDefaultText": "Chọn&hellip;",
-    "invalidInputValue": "Vui lòng nhập giá trị hợp lệ.",
-    "noFieldsConfiguredMessage": "Các trường không được cấu hình để chụp dữ liệu",
-    "invalidSmallNumber": "Vui lòng nhập số nguyên",
-    "invalidNumber": "Vui lòng nhập số nguyên",
-    "invalidFloat": "Vui lòng nhập một số",
-    "invalidDouble": "Vui lòng nhập một số",
-    "requiredFields": "Vui lòng cung cấp giá trị cho tất cả các trường yêu cầu",
-    "selectLocation": "Vui lòng chọn vị trí cho báo cáo của bạn",
-    "numericRangeHintMessage": "${openStrong}Gợi ý:${closeStrong} Giá trị tối thiểu ${minValue} và Giá trị tối đa ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Gợi ý:${closeStrong} Ngày tối thiểu ${minValue} và Ngày tối đa ${maxValue}",
-    "errorsInApplyEdits": "Không thể gửi báo cáo",
-    "attachmentSelectedMsg": "(các) tệp đính kèm được chọn",
-    "attachmentUploadStatus": "Không thể tải lên ${failed} trên ${total} tệp đính kèm",
-    "geoLocationError": "Vị trí hiện tại không khả dụng",
-    "geoLocationOutOfExtent": "Vị trí hiện tại ngoài phạm vi bản đồ nền",
-    "submitButtonTooltip": "Gửi",
-    "cancelButtonTooltip": "Hủy",
-    "geoformBackButtonTooltip": "Quay lại danh sách báo cáo"
-  },
-  "locator": {
-    "addressText": "Địa chỉ:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Vĩ độ/Kinh độ",
-    "invalidSearch": "Không tìm thấy kết quả",
-    "locatorPlaceholder": "Nhập địa chỉ để tìm kiếm",
-    "locationOutOfExtent": "Địa chỉ được định vị ngoài phạm vi bản đồ nền",
-    "searchButtonTooltip": "Tìm kiếm",
-    "clearButtonTooltip": "Xóa giá trị tìm kiếm"
-  },
-  "myIssues": {
-    "title": "Các báo cáo của tôi",
-    "myIssuesTooltip": "Các báo cáo của tôi",
-    "noResultsFound": "Không tìm thấy báo cáo"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Bình chọn",
-    "likeButtonTooltip": "Bình chọn cho báo cáo này",
-    "commentButtonLabel": "Bình luận",
-    "commentButtonTooltip": "Bình luận về báo cáo này",
-    "galleryButtonLabel": "Bộ sưu tập",
-    "galleryButtonTooltip": "Xem tài liệu đính kèm",
-    "mapButtonLabel": "Xem trên Bản đồ",
-    "mapButtonTooltip": "Xem vị trí của báo cáo này",
+  "item_details": {
+    "likeButtonTooltip": "Bình chọn cho mục này",
+    "likeButtonInverseTooltip": "Bình chọn đã được đếm",
+    "commentButtonTooltip": "Thêm một bình luận",
+    "gotoMapViewTooltip": "Đến chế độ xem bản đồ",
+    "galleryButtonTooltip": "Xem tệp đính kèm",
     "commentsListHeading": "Bình luận",
-    "unableToUpdateVoteField": "Không thể tính bình chọn của bạn vào lúc này.",
-    "gotoIssueListTooltip": "Đến danh sách báo cáo"
+    "noCommentsPlaceholder": "Không có bình luận"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Các bình chọn cho báo cáo này",
-    "loadMoreButtonText": "Tải Thêm..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Gửi bình luận",
-    "commentsFormCancelButton": "Hủy",
-    "errorInSubmittingComment": "Không thể gửi bình luận.",
-    "emptyCommentMessage": "Vui lòng nhập bình luận.",
-    "placeHolderText": "Nhập bình luận",
-    "noCommentsAvailableText": "Không có bình luận",
-    "remainingTextCount": "Còn ${0} ký tự",
-    "showNoText": "Không"
-  },
-  "gallery": {
-    "galleryHeaderText": "Bộ sưu tập",
-    "noAttachmentsAvailableText": "Không tìm thấy tệp đính kèm"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Lọc danh sách theo bản đồ",
+    "linkToMapViewOptionTooltip": "Liệt kê các đối tượng hiện ra trên bản đồ hiện tại",
+    "likesForThisItemTooltip": "Bình chọn cho mục này"
   }
 });

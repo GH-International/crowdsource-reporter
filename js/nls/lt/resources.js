@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Žemėlapio sukurti nepavyko",
-    "zoomInTooltip": "Artinti",
-    "zoomOutTooltip": "Tolinti",
-    "geolocationTooltip": "Esama padėtis"
+    "layerLoad": "Nepavyko įkelti viso žemėlapio",
+    "missingItemsFeatureLayer": "Sukonfigūruokite aplikaciją, kad galėtumėte naudoti elementų sluoksnį"
   },
-  "main": {
-    "noGroup": "Sukonfigūruotų grupių nėra",
-    "submitReportButtonText": "Pateikti ataskaitą",
-    "gotoListViewTooltip": "Sąrašo vaizdas",
-    "noFeatureGeomtery": "Elemento parodyti negalima"
+  "sidebar_header": {
+    "menuButtonTooltip": "Rodyti meniu",
+    "signInButton": "Prisijungti",
+    "signInButtonTooltip": "Prisijunkite",
+    "signOutButton": "Atsijungti",
+    "signOutButtonTooltip": "Atsijunkite",
+    "helpButtonLabel": "Pagalba",
+    "helpButtonTooltip": "Sužinokite daugiau",
+    "gotoListViewLabel": "Sąrašo vaizdas",
+    "gotoListViewTooltip": "Pereiti į sąrašo vaizdą",
+    "gotoMapViewLabel": "Žemėlapio vaizdas",
+    "gotoMapViewTooltip": "Eiti į žemėlapio vaizdą"
   },
-  "signin": {
-    "guestSigninText": "Tęsti svečio teisėmis",
-    "signInOrText": "Arba",
-    "signinOptionsText": "Prisijungti naudojant",
-    "noGroupNameText": "Prisijunkite",
-    "guestLoginTooltip": "Prisijungti svečio teisėmis",
-    "facebookLoginTooltip": "Prisijungti naudojant Facebook",
-    "twitterLoginTooltip": "Prisijungti naudojant Twitter",
-    "googlePlusLoginTooltip": "Prisijungti naudojant Google+",
-    "agolLoginTooltip": "Prisijungti naudojant ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Užverti"
   },
-  "webMapList": {
-    "owner": "Savininkas",
-    "created": "Sukūrimo data",
-    "modified": "Paskutinis pakeitimas",
-    "description": "Aprašas",
-    "snippet": "Santrauka",
-    "licenseInfo": "Prieigos ir naudojimo apribojimai",
-    "accessInformation": "Autoriai",
-    "tags": "Raktažodžiai",
-    "numViews": "Peržiūrų skaičius",
-    "avgRating": "Vertinimas",
-    "noWebMapInGroup": "Sukonfigūruota grupė neteisinga arba šioje grupėje nebendrinamas nė vienas elementas.",
-    "infoBtnToolTip": "Žemėlapio informacija"
+  "social_media": {
+    "signIntoFacebookTooltip": "Prisijungti naudojant Facebook",
+    "signIntoGooglePlusTooltip": "Prisijungti naudojant Google+",
+    "signIntoTwitterTooltip": "Prisijungti naudojant Twitter",
+    "signOutOfFacebookTooltip": "Atsijungti nuo Facebook",
+    "signOutOfGooglePlusTooltip": "Atsijungti nuo Google+",
+    "signOutOfTwitterTooltip": "Atsijungti nuo Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Elementų nerasta",
-    "noResultsFoundInCurrentBuffer": "Šalia jūsų objektų nerasta",
-    "unableToFetchFeatureError": "Nepavyko įvykdyti operacijos",
-    "gotoWebmapListTooltip": "Eiti į pagrindinį sąrašą",
-    "gotoMapViewTooltip": "Žemėlapio vaizdas"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (neprivaloma)",
+    "requiredFormItemFlag": " (privaloma)",
+    "unsettableRequiredField": "Būtinas laukas neinicijuotas ir jo nėra formoje",
+    "countOfRemainingCharactersTooltip": "Liko ženklų",
+    "attachmentsHeading": "Į_Attachments____š",
+    "addAttachmentTooltip": "Į_Add attachment_____š",
+    "removeAttachmentTooltip": "Į_Remove attachment______š",
+    "cancelButtonLabel": "Atšaukti",
+    "submitButtonLabel": "Pateikti"
   },
-  "appHeader": {
-    "myReport": "Mano ataskaitos",
-    "signIn": "Prisijungti",
-    "signOut": "Atsijungti",
-    "signInTooltip": "Prisijunkite",
-    "signOutTooltip": "Atsijungti",
-    "myReportTooltip": "Rodyti mano ataskaitas"
-  },
-  "geoform": {
-    "enterInformation": "Išsamiau",
-    "selectAttachments": "Priedai",
-    "selectFileText": "Parinkti",
-    "enterLocation": "Vieta",
-    "reportItButton": "Pranešti apie tai",
-    "cancelButton": "Atšaukti",
-    "requiredField": "(privalomas)",
-    "selectDefaultText": "Pasirinkti&hellip;",
-    "invalidInputValue": "Įveskite leistiną reikšmę.",
-    "noFieldsConfiguredMessage": "Sluoksnio laukai nesukonfigūruoti kaupti duomenis",
-    "invalidSmallNumber": "Įveskite sveikąjį skaičių",
-    "invalidNumber": "Įveskite sveikąjį skaičių",
-    "invalidFloat": "Įveskite skaičių",
-    "invalidDouble": "Įveskite skaičių",
-    "requiredFields": "Pateikite reikšmes visuose būtinuose laukuose",
-    "selectLocation": "Nurodykite ataskaitos vietą",
-    "numericRangeHintMessage": "${openStrong}Užuomina:${closeStrong} minimali vertė ${minValue} ir maksimali vertė ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Užuomina:${closeStrong} minimali data ${minValue} ir maksimali data ${maxValue}",
-    "errorsInApplyEdits": "Komentaro pateikti nepavyko",
-    "attachmentSelectedMsg": "pasirinktas (-i) priedas (-ai)",
-    "attachmentUploadStatus": "Nepavyko įkelti ${failed} iš ${total} priedo (-ų)",
-    "geoLocationError": "Informacijos apie esamą vietą nėra",
-    "geoLocationOutOfExtent": "Dabartinė vieta yra už pagrindo žemėlapio ribų",
-    "submitButtonTooltip": "Pateikti",
-    "cancelButtonTooltip": "Atšaukti",
-    "geoformBackButtonTooltip": "Grįžti į ataskaitų sąrašą"
-  },
-  "locator": {
-    "addressText": "Adresas:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Platuma/Ilguma",
-    "invalidSearch": "Nieko nerasta",
-    "locatorPlaceholder": "Įveskite ieškotiną adresą",
-    "locationOutOfExtent": "Rastas adresas yra už pagrindo žemėlapio ribų",
-    "searchButtonTooltip": "Ieškoti",
-    "clearButtonTooltip": "Išvalyti paieškos reikšmę"
-  },
-  "myIssues": {
-    "title": "Mano ataskaitos",
-    "myIssuesTooltip": "Mano ataskaitos",
-    "noResultsFound": "Ataskaitų nerasta"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Balsuoti",
-    "likeButtonTooltip": "Balsuokite už šią ataskaitą",
-    "commentButtonLabel": "Komentuoti",
-    "commentButtonTooltip": "Pakomentuoti šią ataskaitą",
-    "galleryButtonLabel": "Galerija",
-    "galleryButtonTooltip": "Žr. pridėtus dokumentus",
-    "mapButtonLabel": "Žiūrėti žemėlapyje",
-    "mapButtonTooltip": "Žiūrėti šios ataskaitos vietą",
+  "item_details": {
+    "likeButtonTooltip": "Balsuokite už šį elementą",
+    "likeButtonInverseTooltip": "Balsas įskaičiuotas",
+    "commentButtonTooltip": "Pridėti komentarą",
+    "gotoMapViewTooltip": "Eiti į žemėlapio vaizdą",
+    "galleryButtonTooltip": "Rodyti pridėtus failus",
     "commentsListHeading": "Komentarai",
-    "unableToUpdateVoteField": "Šiuo metu jūsų balso įskaičiuoti negalima.",
-    "gotoIssueListTooltip": "Eiti į ataskaitų sąrašą"
+    "noCommentsPlaceholder": "Komentarų nėra"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Balsai už šią ataskaitą",
-    "loadMoreButtonText": "Įkelti daugiau..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Pateikti komentarą",
-    "commentsFormCancelButton": "Atšaukti",
-    "errorInSubmittingComment": "Komentaro pateikti nepavyko.",
-    "emptyCommentMessage": "Įveskite komentarą.",
-    "placeHolderText": "Įvesti komentarą",
-    "noCommentsAvailableText": "Komentarų nėra",
-    "remainingTextCount": "liko simbolių: ${0}",
-    "showNoText": "Ne"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galerija",
-    "noAttachmentsAvailableText": "Priedų nėra"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtrų sąrašas pagal žemėlapį",
+    "linkToMapViewOptionTooltip": "Pateikti elementus, nematomus šiame žemėlapyje",
+    "likesForThisItemTooltip": "Balsai už šį elementą"
   }
 });

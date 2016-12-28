@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Nevar izveidot karti",
-    "zoomInTooltip": "Pietuvināt",
-    "zoomOutTooltip": "Attālināt",
-    "geolocationTooltip": "Pašreizējais izvietojums"
+    "layerLoad": "Nevar pilnībā ielādēt karti",
+    "missingItemsFeatureLayer": "Lūdzu, konfigurējiet lietotni, lai izmantotu elementu slāni"
   },
-  "main": {
-    "noGroup": "Nav konfigurētas grupas",
-    "submitReportButtonText": "Iesniegt pārskatu",
-    "gotoListViewTooltip": "Saraksta skats",
-    "noFeatureGeomtery": "Funkciju nevar parādīt"
+  "sidebar_header": {
+    "menuButtonTooltip": "Rādīt izvēlni",
+    "signInButton": "Pierakstīties",
+    "signInButtonTooltip": "Pierakstīties",
+    "signOutButton": "Izrakstīties",
+    "signOutButtonTooltip": "Izrakstīties",
+    "helpButtonLabel": "Palīdzība",
+    "helpButtonTooltip": "Papildinformācija",
+    "gotoListViewLabel": "Saraksta skats",
+    "gotoListViewTooltip": "Pāriet uz saraksta skatu",
+    "gotoMapViewLabel": "Kartes skats",
+    "gotoMapViewTooltip": "Iet uz kartes skatu"
   },
-  "signin": {
-    "guestSigninText": "Turpināt kā viesim",
-    "signInOrText": "Vai",
-    "signinOptionsText": "Pieteikties ar:",
-    "noGroupNameText": "Lūdzu, pierakstieties",
-    "guestLoginTooltip": "Pieteikties kā viesim",
-    "facebookLoginTooltip": "Pieteikties ar Facebook",
-    "twitterLoginTooltip": "Pieteikties ar Twitter",
-    "googlePlusLoginTooltip": "Pieteikties ar Google+",
-    "agolLoginTooltip": "Pieteikties ar ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Aizvērt"
   },
-  "webMapList": {
-    "owner": "Īpašnieks",
-    "created": "Izveides datums",
-    "modified": "Modificēšanas datums",
-    "description": "Apraksts",
-    "snippet": "Kopsavilkums",
-    "licenseInfo": "Piekļuves un izmantošanas ierobežojumi",
-    "accessInformation": "Kredīti",
-    "tags": "Tagi",
-    "numViews": "Skatījumu skaits",
-    "avgRating": "Vērtējums",
-    "noWebMapInGroup": "Konfigurētā grupa nav derīga vai ar šo grupu vēl nav kopīgots neviens elements.",
-    "infoBtnToolTip": "Kartes informācija"
+  "social_media": {
+    "signIntoFacebookTooltip": "Pieteikties ar Facebook",
+    "signIntoGooglePlusTooltip": "Pieteikties ar Google+",
+    "signIntoTwitterTooltip": "Pieteikties ar Twitter",
+    "signOutOfFacebookTooltip": "Izrakstīties no Facebook",
+    "signOutOfGooglePlusTooltip": "Izrakstīties no Google+",
+    "signOutOfTwitterTooltip": "Izrakstīties no Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Nav atrasts neviens elements",
-    "noResultsFoundInCurrentBuffer": "Jūsu tuvumā nav atrasts neviens elements",
-    "unableToFetchFeatureError": "Nevar pabeigt darbību",
-    "gotoWebmapListTooltip": "Doties uz galveno sarakstu",
-    "gotoMapViewTooltip": "Kartes skats"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (pēc izvēles)",
+    "requiredFormItemFlag": " (nepieciešams)",
+    "unsettableRequiredField": "Nepieciešamais lauks nav ne inicializēts, ne veidlapā",
+    "countOfRemainingCharactersTooltip": "Atlikušās rakstzīmes",
+    "attachmentsHeading": "ķ_Attachments____ū",
+    "addAttachmentTooltip": "ķ_Add attachment_____ū",
+    "removeAttachmentTooltip": "ķ_Remove attachment______ū",
+    "cancelButtonLabel": "Atcelt",
+    "submitButtonLabel": "Iesniegt"
   },
-  "appHeader": {
-    "myReport": "Mani ziņojumi",
-    "signIn": "Pierakstīties",
-    "signOut": "Izrakstīties",
-    "signInTooltip": "Pierakstīties",
-    "signOutTooltip": "Izrakstīties",
-    "myReportTooltip": "Skatīt manus ziņojumus"
-  },
-  "geoform": {
-    "enterInformation": "Detaļas",
-    "selectAttachments": "Pielikumi",
-    "selectFileText": "Pārlūks",
-    "enterLocation": "Izvietojums",
-    "reportItButton": "Ziņot par to",
-    "cancelButton": "Atcelt",
-    "requiredField": "(nepieciešams)",
-    "selectDefaultText": "Izvēlēties&hellip;",
-    "invalidInputValue": "Lūdzu, ievadiet derīgu vērtību.",
-    "noFieldsConfiguredMessage": "Slāņa lauki nav konfigurēti datu tveršanai",
-    "invalidSmallNumber": "Lūdzu ievadiet veselu skaitli",
-    "invalidNumber": "Lūdzu ievadiet veselu skaitli",
-    "invalidFloat": "Lūdzu ievadiet numuru",
-    "invalidDouble": "Lūdzu ievadiet numuru",
-    "requiredFields": "Lūdzu nodrošiniet vērtības visiem obligātajiem laukiem",
-    "selectLocation": "Lūdzu atlasiet vietu savam ziņojumam",
-    "numericRangeHintMessage": "${openStrong}Norāde:${closeStrong} minimālā vērtība ${minValue} un maksimālā vērtība ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Norāde:${closeStrong} minimālais datums ${minValue} un maksimālais datums ${maxValue}",
-    "errorsInApplyEdits": "Neizdevās iesniegt ziņojumu",
-    "attachmentSelectedMsg": "atlasītais(-ie) pielikums(-i)",
-    "attachmentUploadStatus": "${failed} no ${total} pielikuma(-iem) neizdevās augšupielādēt",
-    "geoLocationError": "Pašreizējā vieta nav pieejama",
-    "geoLocationOutOfExtent": "Pašreizējā vieta ir ārpus pamatkartes tvēruma",
-    "submitButtonTooltip": "Iesniegt",
-    "cancelButtonTooltip": "Atcelt",
-    "geoformBackButtonTooltip": "Atgriezties pārskatu sarakstā"
-  },
-  "locator": {
-    "addressText": "Adrese:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Platums/Garums",
-    "invalidSearch": "Rezultāti nav atrasti",
-    "locatorPlaceholder": "Ievadiet adresi meklēšanai",
-    "locationOutOfExtent": "Noteiktā adrese ir ārpus pamatkartes tvēruma",
-    "searchButtonTooltip": "Meklēšana",
-    "clearButtonTooltip": "Notīrīt meklēšanas vērtību"
-  },
-  "myIssues": {
-    "title": "Mani ziņojumi",
-    "myIssuesTooltip": "Mani ziņojumi",
-    "noResultsFound": "Nav atrasts neviens ziņojums"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Balsot",
-    "likeButtonTooltip": "Balsot par šo ziņojumu",
-    "commentButtonLabel": "Komentārs",
-    "commentButtonTooltip": "Komentēt šo ziņojumu",
-    "galleryButtonLabel": "Galerija",
-    "galleryButtonTooltip": "Skatīt pievienotos dokumentus",
-    "mapButtonLabel": "Skatīt kartē",
-    "mapButtonTooltip": "Skatiet šī ziņojuma vietu",
+  "item_details": {
+    "likeButtonTooltip": "Balsot par šo vienumu",
+    "likeButtonInverseTooltip": "Balss pieskaitīta",
+    "commentButtonTooltip": "Pievienot komentāru",
+    "gotoMapViewTooltip": "Iet uz kartes skatu",
+    "galleryButtonTooltip": "Skatīt pievienotos failus",
     "commentsListHeading": "Komentāri",
-    "unableToUpdateVoteField": "Jūsu balsi šobrīd nevar pievienot.",
-    "gotoIssueListTooltip": "Doties uz ziņojumu sarakstu"
+    "noCommentsPlaceholder": "Nav komentāru"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Balsis par šo ziņojumu",
-    "loadMoreButtonText": "Ielādēt vēl..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Iesniegt komentāru",
-    "commentsFormCancelButton": "Atcelt",
-    "errorInSubmittingComment": "Komentāru nevarēja iesniegt.",
-    "emptyCommentMessage": "Lūdzu ievadiet komentāru.",
-    "placeHolderText": "Ierakstiet komentāru",
-    "noCommentsAvailableText": "Nav pieejamu komentāru",
-    "remainingTextCount": "Palikusi(-šas) ${0} rakstzīme(-s)",
-    "showNoText": "Nē"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galerija",
-    "noAttachmentsAvailableText": "Nav atrasta piesaiste"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtrēt sarakstu pēc kartes",
+    "linkToMapViewOptionTooltip": "Saraksta elementi, kas ir redzami pašreizējā kartē",
+    "likesForThisItemTooltip": "Balsis par šo vienumu"
   }
 });

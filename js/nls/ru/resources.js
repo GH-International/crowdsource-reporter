@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Не удалось создать карту",
-    "zoomInTooltip": "Увеличить",
-    "zoomOutTooltip": "Уменьшить",
-    "geolocationTooltip": "Текущее местоположение"
+    "layerLoad": "Не удалось полностью загрузить карту",
+    "missingItemsFeatureLayer": "Настройте приложение для использования векторного слоя."
   },
-  "main": {
-    "noGroup": "Не задана группа",
-    "submitReportButtonText": "Отправить отчет",
-    "gotoListViewTooltip": "Вид - список",
-    "noFeatureGeomtery": "Объекты невозможно отобразить"
+  "sidebar_header": {
+    "menuButtonTooltip": "Показать меню",
+    "signInButton": "Вход",
+    "signInButtonTooltip": "Вход",
+    "signOutButton": "Выход",
+    "signOutButtonTooltip": "Выход",
+    "helpButtonLabel": "Справка",
+    "helpButtonTooltip": "Более подробно",
+    "gotoListViewLabel": "Вид списка",
+    "gotoListViewTooltip": "Перейти в вид списка",
+    "gotoMapViewLabel": "Вид карты",
+    "gotoMapViewTooltip": "Перейти к виду карты"
   },
-  "signin": {
-    "guestSigninText": "Продолжить как гость",
-    "signInOrText": "Или",
-    "signinOptionsText": "Вход с использованием:",
-    "noGroupNameText": "Выполните вход",
-    "guestLoginTooltip": "Войти как гость",
-    "facebookLoginTooltip": "Войти через Facebook",
-    "twitterLoginTooltip": "Войти через Twitter",
-    "googlePlusLoginTooltip": "Войти через Google+",
-    "agolLoginTooltip": "Войти через ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Закрыть"
   },
-  "webMapList": {
-    "owner": "Владелец",
-    "created": "Время создания",
-    "modified": "Дата изменения",
-    "description": "Описание",
-    "snippet": "Итоговая информация",
-    "licenseInfo": "Ограничения доступа и использования",
-    "accessInformation": "Сведения об авторах",
-    "tags": "Теги",
-    "numViews": "Количество просмотров",
-    "avgRating": "Рейтинг",
-    "noWebMapInGroup": "Настроенная группа недействительна, или в указанной группе нет доступных элементов",
-    "infoBtnToolTip": "Информация карты"
+  "social_media": {
+    "signIntoFacebookTooltip": "Войти через Facebook",
+    "signIntoGooglePlusTooltip": "Войти через Google+",
+    "signIntoTwitterTooltip": "Войти через Twitter",
+    "signOutOfFacebookTooltip": "Выйти из Facebook",
+    "signOutOfGooglePlusTooltip": "Выйти из Google+",
+    "signOutOfTwitterTooltip": "Выйти из Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Не найдены объекты",
-    "noResultsFoundInCurrentBuffer": "Не найдены объекты рядом",
-    "unableToFetchFeatureError": "Невозможно завершить операцию",
-    "gotoWebmapListTooltip": "Перейти в основной список",
-    "gotoMapViewTooltip": "Вид карты"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (дополнительно)",
+    "requiredFormItemFlag": " (необходимо)",
+    "unsettableRequiredField": "Требуемое поле неактивно либо отсутствует в форме",
+    "countOfRemainingCharactersTooltip": "Символов осталось",
+    "attachmentsHeading": "Ж_Attachments____Я",
+    "addAttachmentTooltip": "Ж_Add attachment_____Я",
+    "removeAttachmentTooltip": "Ж_Remove attachment______Я",
+    "cancelButtonLabel": "Отмена",
+    "submitButtonLabel": "Подтвердить"
   },
-  "appHeader": {
-    "myReport": "Мои отчеты",
-    "signIn": "Вход",
-    "signOut": "Выход",
-    "signInTooltip": "Вход",
-    "signOutTooltip": "Выход",
-    "myReportTooltip": "Просмотреть мои отчеты"
-  },
-  "geoform": {
-    "enterInformation": "Подробности",
-    "selectAttachments": "Вложения",
-    "selectFileText": "Просмотр",
-    "enterLocation": "Расположение",
-    "reportItButton": "Отчет",
-    "cancelButton": "Отменить",
-    "requiredField": "(необходимо)",
-    "selectDefaultText": "Выбрать&hellip;",
-    "invalidInputValue": "Введите корректное значение.",
-    "noFieldsConfiguredMessage": "Поля слоя не настроены для получения данных",
-    "invalidSmallNumber": "Введите целое число",
-    "invalidNumber": "Введите целое число",
-    "invalidFloat": "Введите число",
-    "invalidDouble": "Введите число",
-    "requiredFields": "Укажите значения для всех обязательных полей",
-    "selectLocation": "Выберите местоположение для отчета",
-    "numericRangeHintMessage": "${openStrong}Подсказка:${closeStrong} Минимальное значение ${minValue} и Максимальное значение ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Hint:${closeStrong} Минимальная дата ${minValue} и Максимальная дата ${maxValue}",
-    "errorsInApplyEdits": "Невозможно добавить отчет.",
-    "attachmentSelectedMsg": "выбранные вложения",
-    "attachmentUploadStatus": "${failed} из ${total} вложений не удалось выгрузить.",
-    "geoLocationError": "Текущее местоположение недоступно",
-    "geoLocationOutOfExtent": "Текущее местоположение вне экстента базовой карты",
-    "submitButtonTooltip": "Подтвердить",
-    "cancelButtonTooltip": "Отменить",
-    "geoformBackButtonTooltip": "Вернуться к списку отчетов"
-  },
-  "locator": {
-    "addressText": "Адрес:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Широта/Долгота",
-    "invalidSearch": "Результаты не найдены",
-    "locatorPlaceholder": "Введите адрес для поиска",
-    "locationOutOfExtent": "Адрес находится вне экстента базовой карты",
-    "searchButtonTooltip": "Поиск",
-    "clearButtonTooltip": "Очистить значение поиска"
-  },
-  "myIssues": {
-    "title": "Мои отчеты",
-    "myIssuesTooltip": "Мои отчеты",
-    "noResultsFound": "Отчеты не найдены."
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Голосовать",
-    "likeButtonTooltip": "Голосовать за этот отчет",
-    "commentButtonLabel": "Комментарий",
-    "commentButtonTooltip": "Комментировать этот отчет",
-    "galleryButtonLabel": "Галерея",
-    "galleryButtonTooltip": "Просмотр вложенных документов",
-    "mapButtonLabel": "Просмотр на карте",
-    "mapButtonTooltip": "Просмотреть местоположение этого отчета",
+  "item_details": {
+    "likeButtonTooltip": "Голосовать за этот элемент",
+    "likeButtonInverseTooltip": "Голоса подсчитаны",
+    "commentButtonTooltip": "Добавить комментарий",
+    "gotoMapViewTooltip": "Перейти к виду карты",
+    "galleryButtonTooltip": "Просмотр вложенных файлов",
     "commentsListHeading": "Комментарии",
-    "unableToUpdateVoteField": "Ваш голос не может быть учтен сейчас.",
-    "gotoIssueListTooltip": "Перейти к списку отчетов"
+    "noCommentsPlaceholder": "Комментарии отсутствуют"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Число голосов отданных за отчет",
-    "loadMoreButtonText": "Загрузить больше..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Отправить комментарий",
-    "commentsFormCancelButton": "Отменить",
-    "errorInSubmittingComment": "Комментарий не может быть добавлен.",
-    "emptyCommentMessage": "Введите комментарий.",
-    "placeHolderText": "Введите комментарий",
-    "noCommentsAvailableText": "Нет доступных комментариев",
-    "remainingTextCount": "Символов осталось: ${0}",
-    "showNoText": "Нет"
-  },
-  "gallery": {
-    "galleryHeaderText": "Галерея",
-    "noAttachmentsAvailableText": "Вложения не найдены"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Фильтр списка по картам",
+    "linkToMapViewOptionTooltip": "Список объектов, видимых в текущей карте",
+    "likesForThisItemTooltip": "Голоса, поданные за этот элемент"
   }
 });

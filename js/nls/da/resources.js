@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Kan ikke oprette kort",
-    "zoomInTooltip": "Zoom ind",
-    "zoomOutTooltip": "Zoom ud",
-    "geolocationTooltip": "Aktuel placering"
+    "layerLoad": "Kan ikke indlæse kortet helt",
+    "missingItemsFeatureLayer": "Konfigurér applikationen til at bruge et vektorlag"
   },
-  "main": {
-    "noGroup": "Ingen gruppe konfigureret",
-    "submitReportButtonText": "Send en rapport",
-    "gotoListViewTooltip": "Listevisning",
-    "noFeatureGeomtery": "Objekt kan ikke vises"
+  "sidebar_header": {
+    "menuButtonTooltip": "Vis menu",
+    "signInButton": "Log ind",
+    "signInButtonTooltip": "Log ind",
+    "signOutButton": "Log ud",
+    "signOutButtonTooltip": "Log ud",
+    "helpButtonLabel": "Hjælp",
+    "helpButtonTooltip": "Lær mere",
+    "gotoListViewLabel": "Listevisning",
+    "gotoListViewTooltip": "Gå til listevisning",
+    "gotoMapViewLabel": "Kortvisning",
+    "gotoMapViewTooltip": "Gå til kortvisning"
   },
-  "signin": {
-    "guestSigninText": "Fortsæt som gæst",
-    "signInOrText": "Eller",
-    "signinOptionsText": "Log ind med",
-    "noGroupNameText": "Log ind",
-    "guestLoginTooltip": "Log ind som gæst",
-    "facebookLoginTooltip": "Log ind med Facebook",
-    "twitterLoginTooltip": "Log ind med Twitter",
-    "googlePlusLoginTooltip": "Log ind med Google+",
-    "agolLoginTooltip": "Log ind med ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Luk"
   },
-  "webMapList": {
-    "owner": "Ejer",
-    "created": "Oprettelsesdato",
-    "modified": "Dato for ændring",
-    "description": "Beskrivelse",
-    "snippet": "Summary",
-    "licenseInfo": "Få adgang til og brug begrænsninger",
-    "accessInformation": "Credits",
-    "tags": "Tags",
-    "numViews": "Antal visninger",
-    "avgRating": "Vurdering",
-    "noWebMapInGroup": "Konfigureret gruppe er ugyldig, eller ingen elementer er endnu blevet delt med denne gruppe.",
-    "infoBtnToolTip": "Kortoplysninger"
+  "social_media": {
+    "signIntoFacebookTooltip": "Log ind med Facebook",
+    "signIntoGooglePlusTooltip": "Log ind med Google+",
+    "signIntoTwitterTooltip": "Log ind med Twitter",
+    "signOutOfFacebookTooltip": "Log ud af Facebook",
+    "signOutOfGooglePlusTooltip": "Log ud af Google+",
+    "signOutOfTwitterTooltip": "Log ud af Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Der blev ikke fundet nogen objekter",
-    "noResultsFoundInCurrentBuffer": "Der blev ikke fundet nogen objekter i nærheden af dig",
-    "unableToFetchFeatureError": "Kan ikke fuldføre handling",
-    "gotoWebmapListTooltip": "Gå til hovedlisten",
-    "gotoMapViewTooltip": "Kortvisning"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (valgfri)",
+    "requiredFormItemFlag": " (obligatorisk)",
+    "unsettableRequiredField": "Et obligatorisk felt er hverken initialiseret eller placeret i formularen",
+    "countOfRemainingCharactersTooltip": "Resterende tegn",
+    "attachmentsHeading": "ø_Attachments____å",
+    "addAttachmentTooltip": "ø_Add attachment_____å",
+    "removeAttachmentTooltip": "ø_Remove attachment______å",
+    "cancelButtonLabel": "Annullér",
+    "submitButtonLabel": "Indsend"
   },
-  "appHeader": {
-    "myReport": "Mine rapporter",
-    "signIn": "Log ind",
-    "signOut": "Log ud",
-    "signInTooltip": "Sign in",
-    "signOutTooltip": "Log ud",
-    "myReportTooltip": "Vis mine rapporter"
-  },
-  "geoform": {
-    "enterInformation": "Oplysninger",
-    "selectAttachments": "Vedhæftninger",
-    "selectFileText": "Gennemse",
-    "enterLocation": "Sted",
-    "reportItButton": "Rapportér det",
-    "cancelButton": "Annuller",
-    "requiredField": "(obligatorisk)",
-    "selectDefaultText": "Select&hellip;",
-    "invalidInputValue": "Indtast en gyldig værdi.",
-    "noFieldsConfiguredMessage": "Lagfelter er ikke konfigureret til at hente data",
-    "invalidSmallNumber": "Indtast et heltal",
-    "invalidNumber": "Indtast et heltal",
-    "invalidFloat": "Indtast et tal",
-    "invalidDouble": "Indtast et tal",
-    "requiredFields": "Angiv værdier for alle påkrævede felter",
-    "selectLocation": "Vælg en placering for din rapport",
-    "numericRangeHintMessage": "${openStrong}Hint:${closeStrong} Minimumværdi ${minValue} og maksimumværdi ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Hint:${closeStrong} Minimumdato ${minValue} og maksimumdato ${maxValue}",
-    "errorsInApplyEdits": "Rapport kunne ikke sendes",
-    "attachmentSelectedMsg": "vedhæftning(er) valgt",
-    "attachmentUploadStatus": "${mislykkedes} af ${total} vedhæftning(er) kunne ikke overføres",
-    "geoLocationError": "Aktuel position er ikke tilgængelig",
-    "geoLocationOutOfExtent": "Aktuel position ligger uden for baggrundskortets udstrækning",
-    "submitButtonTooltip": "Indsend",
-    "cancelButtonTooltip": "Annuller",
-    "geoformBackButtonTooltip": "Vend tilbage til rapportlisten"
-  },
-  "locator": {
-    "addressText": "Adresse:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Breddegrad/længdegrad",
-    "invalidSearch": "Ingen resultater",
-    "locatorPlaceholder": "Indtast en adresse, der skal søges efter",
-    "locationOutOfExtent": "Den fundne adresse ligger uden for baggrundskortets udstrækning",
-    "searchButtonTooltip": "Search",
-    "clearButtonTooltip": "Ryd søgeværdi"
-  },
-  "myIssues": {
-    "title": "Mine rapporter",
-    "myIssuesTooltip": "Mine rapporter",
-    "noResultsFound": "ingen rapporter fundet"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Stem",
-    "likeButtonTooltip": "Stem på denne rapport",
-    "commentButtonLabel": "Kommentar",
-    "commentButtonTooltip": "Kommentér på denne rapport",
-    "galleryButtonLabel": "Galleri",
-    "galleryButtonTooltip": "Se vedhæftede dokumenter",
-    "mapButtonLabel": "Vis på kort",
-    "mapButtonTooltip": "Vis denne rapports placering",
+  "item_details": {
+    "likeButtonTooltip": "Stem på dette element",
+    "likeButtonInverseTooltip": "Stemmer optalt",
+    "commentButtonTooltip": "Tilføj en kommentar",
+    "gotoMapViewTooltip": "Gå til kortvisning",
+    "galleryButtonTooltip": "Se vedhæftede filer",
     "commentsListHeading": "Comments",
-    "unableToUpdateVoteField": "Din stemme kan ikke tælles på nuværende tidspunkt.",
-    "gotoIssueListTooltip": "Gå til rapportlisten"
+    "noCommentsPlaceholder": "Ingen kommentarer"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Stemmer på denne rapport",
-    "loadMoreButtonText": "Indlæs mere..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Send kommentar",
-    "commentsFormCancelButton": "Annuller",
-    "errorInSubmittingComment": "Kommentar kunne ikke indsendes.",
-    "emptyCommentMessage": "Indtast en kommentar.",
-    "placeHolderText": "Skriv en kommentar",
-    "noCommentsAvailableText": "ingen kommentarer tilgængelige",
-    "remainingTextCount": "${0} tegn tilbage",
-    "showNoText": "Nej"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galleri",
-    "noAttachmentsAvailableText": "Ingen vedhæftede filer"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtrér liste efter kort",
+    "linkToMapViewOptionTooltip": "Angiv de objekter, der er synlige på det aktuelle kort, på en liste",
+    "likesForThisItemTooltip": "Stemmer på dette element"
   }
 });

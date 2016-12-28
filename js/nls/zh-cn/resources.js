@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "无法创建地图",
-    "zoomInTooltip": "放大",
-    "zoomOutTooltip": "缩小",
-    "geolocationTooltip": "当前位置"
+    "layerLoad": "无法完全加载地图",
+    "missingItemsFeatureLayer": "请配置应用程序以使用要素图层"
   },
-  "main": {
-    "noGroup": "未配置任何群组",
-    "submitReportButtonText": "提交报告",
-    "gotoListViewTooltip": "列表视图",
-    "noFeatureGeomtery": "无法显示要素"
+  "sidebar_header": {
+    "menuButtonTooltip": "显示菜单",
+    "signInButton": "登录",
+    "signInButtonTooltip": "登录",
+    "signOutButton": "登出",
+    "signOutButtonTooltip": "登出",
+    "helpButtonLabel": "帮助",
+    "helpButtonTooltip": "了解详细信息",
+    "gotoListViewLabel": "列表视图",
+    "gotoListViewTooltip": "转至列表视图",
+    "gotoMapViewLabel": "地图视图",
+    "gotoMapViewTooltip": "转至地图视图"
   },
-  "signin": {
-    "guestSigninText": "以访客身份继续进行",
-    "signInOrText": "或",
-    "signinOptionsText": "通过以下方式登录：",
-    "noGroupNameText": "请登录",
-    "guestLoginTooltip": "以访客身份登录",
-    "facebookLoginTooltip": "使用 Facebook 登录",
-    "twitterLoginTooltip": "使用 Twitter 登录",
-    "googlePlusLoginTooltip": "使用 Google+ 登录",
-    "agolLoginTooltip": "使用 ArcGIS 登录"
+  "popup_Close": {
+    "closeButtonTooltip": "关闭"
   },
-  "webMapList": {
-    "owner": "所有者",
-    "created": "创建日期",
-    "modified": "修改日期",
-    "description": "描述",
-    "snippet": "摘要",
-    "licenseInfo": "访问和使用限制",
-    "accessInformation": "制作者名单",
-    "tags": "标签",
-    "numViews": "查看次数",
-    "avgRating": "评级",
-    "noWebMapInGroup": "已配置的群组无效，或者没有与该群组共享的任何项目。",
-    "infoBtnToolTip": "地图信息"
+  "social_media": {
+    "signIntoFacebookTooltip": "使用 Facebook 登录",
+    "signIntoGooglePlusTooltip": "使用 Google+ 登录",
+    "signIntoTwitterTooltip": "使用 Twitter 登录",
+    "signOutOfFacebookTooltip": "登出 Facebook",
+    "signOutOfGooglePlusTooltip": "登出 Google+",
+    "signOutOfTwitterTooltip": "登出 Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "未找到要素",
-    "noResultsFoundInCurrentBuffer": "在您附近未找到要素",
-    "unableToFetchFeatureError": "无法完成操作",
-    "gotoWebmapListTooltip": "转至主列表",
-    "gotoMapViewTooltip": "地图视图"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (可选)",
+    "requiredFormItemFlag": " (必填)",
+    "unsettableRequiredField": "必填字段既未被初始化，也不在表单中",
+    "countOfRemainingCharactersTooltip": "剩余字符数",
+    "attachmentsHeading": "试_Attachments____验",
+    "addAttachmentTooltip": "试_Add attachment_____验",
+    "removeAttachmentTooltip": "试_Remove attachment______验",
+    "cancelButtonLabel": "取消",
+    "submitButtonLabel": "提交"
   },
-  "appHeader": {
-    "myReport": "我的报告",
-    "signIn": "登录",
-    "signOut": "登出",
-    "signInTooltip": "登录",
-    "signOutTooltip": "登出",
-    "myReportTooltip": "查看我的报告"
-  },
-  "geoform": {
-    "enterInformation": "详细信息",
-    "selectAttachments": "附件",
-    "selectFileText": "浏览",
-    "enterLocation": "位置",
-    "reportItButton": "提交报告",
-    "cancelButton": "取消",
-    "requiredField": "(必填)",
-    "selectDefaultText": "选择&hellip;",
-    "invalidInputValue": "请输入有效值。",
-    "noFieldsConfiguredMessage": "图层字段未被配置为捕获数据",
-    "invalidSmallNumber": "请输入一个整数",
-    "invalidNumber": "请输入一个整数",
-    "invalidFloat": "请输入一个数字",
-    "invalidDouble": "请输入一个数字",
-    "requiredFields": "请为所有必填字段填写值",
-    "selectLocation": "请为您的报告选择位置",
-    "numericRangeHintMessage": "${openStrong}提示:${closeStrong} 最小值 ${minValue} 和最大值 ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}提示:${closeStrong} 最小日期 ${minValue} 和最大日期 ${maxValue}",
-    "errorsInApplyEdits": "无法提交报告",
-    "attachmentSelectedMsg": "附件已选定",
-    "attachmentUploadStatus": "${failed} 个附件(共有 ${total} 个)上传失败",
-    "geoLocationError": "当前位置不可用",
-    "geoLocationOutOfExtent": "当前位置不在底图范围之内",
-    "submitButtonTooltip": "提交",
-    "cancelButtonTooltip": "取消",
-    "geoformBackButtonTooltip": "返回至报告列表"
-  },
-  "locator": {
-    "addressText": "地址:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "纬度/经度",
-    "invalidSearch": "未找到任何结果",
-    "locatorPlaceholder": "输入一个搜索地址",
-    "locationOutOfExtent": "已找到的地址不在底图范围之内",
-    "searchButtonTooltip": "搜索",
-    "clearButtonTooltip": "清除搜索值"
-  },
-  "myIssues": {
-    "title": "我的报告",
-    "myIssuesTooltip": "我的报告",
-    "noResultsFound": "未找到任何报告"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "投票",
-    "likeButtonTooltip": "投票支持此报告",
-    "commentButtonLabel": "评论",
-    "commentButtonTooltip": "评论此报告",
-    "galleryButtonLabel": "图库",
-    "galleryButtonTooltip": "参见随附文档",
-    "mapButtonLabel": "在地图中查看",
-    "mapButtonTooltip": "查看此报告的位置",
+  "item_details": {
+    "likeButtonTooltip": "投票支持此项目",
+    "likeButtonInverseTooltip": "已计数投票",
+    "commentButtonTooltip": "添加评论",
+    "gotoMapViewTooltip": "转至地图视图",
+    "galleryButtonTooltip": "参见随附文件",
     "commentsListHeading": "评论",
-    "unableToUpdateVoteField": "目前无法计数您的投票。",
-    "gotoIssueListTooltip": "转至报告列表"
+    "noCommentsPlaceholder": "无评论"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "投票支持此报告",
-    "loadMoreButtonText": "加载更多..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "提交评论",
-    "commentsFormCancelButton": "取消",
-    "errorInSubmittingComment": "无法提交评论。",
-    "emptyCommentMessage": "请输入一条评论。",
-    "placeHolderText": "输入一条评论",
-    "noCommentsAvailableText": "没有任何评论可用",
-    "remainingTextCount": "剩余 ${0} 个字符",
-    "showNoText": "否"
-  },
-  "gallery": {
-    "galleryHeaderText": "图库",
-    "noAttachmentsAvailableText": "未找到任何附件"
+  "item_list": {
+    "linkToMapViewOptionLabel": "按地图过滤列表",
+    "linkToMapViewOptionTooltip": "列出在当前地图中可见的要素",
+    "likesForThisItemTooltip": "投票支持此项目"
   }
 });

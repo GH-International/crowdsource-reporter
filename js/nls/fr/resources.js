@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Impossible de créer la carte",
-    "zoomInTooltip": "Zoom avant",
-    "zoomOutTooltip": "Zoom arrière",
-    "geolocationTooltip": "Position actuelle"
+    "layerLoad": "Impossible de charger entièrement la carte",
+    "missingItemsFeatureLayer": "Veuillez configurer l'application pour utiliser une couche d'entités"
   },
-  "main": {
-    "noGroup": "Aucun groupe configuré",
-    "submitReportButtonText": "Envoyer un rapport",
-    "gotoListViewTooltip": "Vue Liste",
-    "noFeatureGeomtery": "Impossible d'afficher l'entité"
+  "sidebar_header": {
+    "menuButtonTooltip": "Afficher le menu",
+    "signInButton": "Connexion",
+    "signInButtonTooltip": "Se connecter",
+    "signOutButton": "Déconnexion",
+    "signOutButtonTooltip": "Déconnexion",
+    "helpButtonLabel": "Aide",
+    "helpButtonTooltip": "En savoir plus",
+    "gotoListViewLabel": "Vue Liste",
+    "gotoListViewTooltip": "Accéder à la vue Liste",
+    "gotoMapViewLabel": "Vue cartographique",
+    "gotoMapViewTooltip": "Accéder à la vue cartographique"
   },
-  "signin": {
-    "guestSigninText": "Continuer comme invité",
-    "signInOrText": "Ou",
-    "signinOptionsText": "Se connecter avec :",
-    "noGroupNameText": "Connectez-vous",
-    "guestLoginTooltip": "Se connecter comme invité",
-    "facebookLoginTooltip": "Se connecter avec Facebook",
-    "twitterLoginTooltip": "Se connecter avec Twitter",
-    "googlePlusLoginTooltip": "Se connecter avec Google+",
-    "agolLoginTooltip": "Se connecter avec ArcGIS"
+  "popup_Close": {
+    "closeButtonTooltip": "Fermer"
   },
-  "webMapList": {
-    "owner": "Propriétaire",
-    "created": "Date de création",
-    "modified": "Date de modification",
-    "description": "Description",
-    "snippet": "Résumé",
-    "licenseInfo": "Restrictions d'accès et d'utilisation",
-    "accessInformation": "Crédits",
-    "tags": "Balises",
-    "numViews": "Nombre de vues",
-    "avgRating": "Evaluation",
-    "noWebMapInGroup": "Le groupe configuré n'est pas valide ou aucun élément n'a encore été partagé avec ce groupe.",
-    "infoBtnToolTip": "Informations sur la carte"
+  "social_media": {
+    "signIntoFacebookTooltip": "Se connecter avec Facebook",
+    "signIntoGooglePlusTooltip": "Se connecter avec Google+",
+    "signIntoTwitterTooltip": "Se connecter avec Twitter",
+    "signOutOfFacebookTooltip": "Se déconnecter de Facebook",
+    "signOutOfGooglePlusTooltip": "Se déconnecter de Google+",
+    "signOutOfTwitterTooltip": "Se déconnecter de Twitter"
   },
-  "issueWall": {
-    "noResultsFound": "Aucune entité trouvée",
-    "noResultsFoundInCurrentBuffer": "Aucune entité trouvée à proximité de votre position",
-    "unableToFetchFeatureError": "Impossible d'exécuter l'opération",
-    "gotoWebmapListTooltip": "Accéder à la liste principale",
-    "gotoMapViewTooltip": "Vue cartographique"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (facultatif)",
+    "requiredFormItemFlag": " (requis)",
+    "unsettableRequiredField": "Un champ obligatoire n'est pas initialisé ou ne figure pas dans le formulaire",
+    "countOfRemainingCharactersTooltip": "Caractères restants",
+    "attachmentsHeading": "æ_Attachments____Â",
+    "addAttachmentTooltip": "æ_Add attachment_____Â",
+    "removeAttachmentTooltip": "æ_Remove attachment______Â",
+    "cancelButtonLabel": "Annuler",
+    "submitButtonLabel": "Envoyer"
   },
-  "appHeader": {
-    "myReport": "Mes rapports",
-    "signIn": "Connexion",
-    "signOut": "Déconnexion",
-    "signInTooltip": "Connexion",
-    "signOutTooltip": "Déconnexion",
-    "myReportTooltip": "Afficher mes rapports"
-  },
-  "geoform": {
-    "enterInformation": "Détails",
-    "selectAttachments": "Pièces jointes",
-    "selectFileText": "Parcourir",
-    "enterLocation": "Emplacement",
-    "reportItButton": "Signaler",
-    "cancelButton": "Annuler",
-    "requiredField": "(requis)",
-    "selectDefaultText": "Sélectionner&hellip;",
-    "invalidInputValue": "Entrez une valeur valide.",
-    "noFieldsConfiguredMessage": "Les champs de couche ne sont pas configurés pour capturer les données",
-    "invalidSmallNumber": "Entrez un entier",
-    "invalidNumber": "Entrez un entier",
-    "invalidFloat": "Please enter a number",
-    "invalidDouble": "Please enter a number",
-    "requiredFields": "Indiquez des valeurs pour tous les champs requis",
-    "selectLocation": "Sélectionnez l'emplacement de votre rapport",
-    "numericRangeHintMessage": "${openStrong}Astuce :${closeStrong} valeur minimale ${minValue} et valeur maximale ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Astuce :${closeStrong} date minimum ${minValue} et date maximum ${maxValue}",
-    "errorsInApplyEdits": "Impossible d'envoyer le rapport",
-    "attachmentSelectedMsg": "pièce(s) jointe(s) sélectionnée(s)",
-    "attachmentUploadStatus": "Echec du chargement de ${failed} sur ${total} pièce(s) jointe(s)",
-    "geoLocationError": "Localisant actuel non disponible",
-    "geoLocationOutOfExtent": "L'étendue courante est en dehors de l'étendue du fond de carte",
-    "submitButtonTooltip": "Envoyer",
-    "cancelButtonTooltip": "Annuler",
-    "geoformBackButtonTooltip": "Revenir à la liste des rapports"
-  },
-  "locator": {
-    "addressText": "Adresse :",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Latitude/Longitude",
-    "invalidSearch": "Aucun résultat trouvé",
-    "locatorPlaceholder": "Entrer une adresse à rechercher",
-    "locationOutOfExtent": "L'adresse localisée est en dehors de l'étendue du fond de carte",
-    "searchButtonTooltip": "Rechercher",
-    "clearButtonTooltip": "Effacer la valeur de recherche"
-  },
-  "myIssues": {
-    "title": "Mes rapports",
-    "myIssuesTooltip": "Mes rapports",
-    "noResultsFound": "Aucun rapport trouvé"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Voter",
-    "likeButtonTooltip": "Voter pour ce rapport",
-    "commentButtonLabel": "Commentaire",
-    "commentButtonTooltip": "Commenter ce rapport",
-    "galleryButtonLabel": "Bibliothèque",
-    "galleryButtonTooltip": "Voir les documents joints",
-    "mapButtonLabel": "Afficher sur la carte",
-    "mapButtonTooltip": "Afficher l'emplacement de ce rapport",
+  "item_details": {
+    "likeButtonTooltip": "Voter pour cet élément",
+    "likeButtonInverseTooltip": "Vote comptabilisé",
+    "commentButtonTooltip": "Ajouter un commentaire",
+    "gotoMapViewTooltip": "Accéder à la vue cartographique",
+    "galleryButtonTooltip": "Voir les fichiers joints",
     "commentsListHeading": "Commentaires",
-    "unableToUpdateVoteField": "Il est actuellement impossible de comptabiliser votre vote.",
-    "gotoIssueListTooltip": "Accéder à la liste des rapports"
+    "noCommentsPlaceholder": "Aucun commentaire"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Votes pour ce rapport",
-    "loadMoreButtonText": "Charger plus..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Envoyer un commentaire",
-    "commentsFormCancelButton": "Annuler",
-    "errorInSubmittingComment": "Impossible d'envoyer le commentaire.",
-    "emptyCommentMessage": "Saisissez un commentaire.",
-    "placeHolderText": "Saisir un commentaire",
-    "noCommentsAvailableText": "Aucun commentaire disponible",
-    "remainingTextCount": "${0} caractère(s) restant(s)",
-    "showNoText": "Non"
-  },
-  "gallery": {
-    "galleryHeaderText": "Bibliothèque",
-    "noAttachmentsAvailableText": "Aucune pièce jointe trouvée"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtrer la liste par cartes",
+    "linkToMapViewOptionTooltip": "Répertorier les entités visibles sur la carte active",
+    "likesForThisItemTooltip": "Voter pour cet élément"
   }
 });

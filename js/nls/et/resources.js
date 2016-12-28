@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,130 +15,57 @@
  */
 define({
   "map": {
-    "error": "Võimetu koostama kaarti",
-    "zoomInTooltip": "Suurenda",
-    "zoomOutTooltip": "Vähenda",
-    "geolocationTooltip": "Praegune asukoht"
+    "error": "Kaarti ei saa luua",
+    "layerLoad": "Kaarti ei saa täielikult laadida",
+    "missingItemsFeatureLayer": "Konfigureerige rakendus kasutama objektikihti"
   },
-  "main": {
-    "noGroup": "Ühtki rühma ei ole konfigureeritud",
-    "submitReportButtonText": "Edasta aruanne",
-    "gotoListViewTooltip": "Loendivaade",
-    "noFeatureGeomtery": "Funktsiooni ei saa kuvada."
+  "sidebar_header": {
+    "menuButtonTooltip": "Näita menüüd",
+    "signInButton": "Logi sisse",
+    "signInButtonTooltip": "Logi sisse",
+    "signOutButton": "Logi välja",
+    "signOutButtonTooltip": "Logi välja",
+    "helpButtonLabel": "Abi",
+    "helpButtonTooltip": "Lisateave",
+    "gotoListViewLabel": "Vaadete loend",
+    "gotoListViewTooltip": "Mine vaadete loendisse",
+    "gotoMapViewLabel": "Kaardivaade",
+    "gotoMapViewTooltip": "Mine kaardivaatesse"
   },
-  "signin": {
-    "guestSigninText": "Jätkake külalisena",
-    "signInOrText": "või",
-    "signinOptionsText": "Logige sisse",
-    "noGroupNameText": "Palun logi sisse",
-    "guestLoginTooltip": "Logige sisse külalisena",
-    "facebookLoginTooltip": "Logige sisse Facebooki konto kaudu",
-    "twitterLoginTooltip": "Logige sisse Twitteri konto kaudu",
-    "googlePlusLoginTooltip": "Logige sisse Google+ kasutajana",
-    "agolLoginTooltip": "Logige sisse ArcGIS kasutajana"
+  "popup_Close": {
+    "closeButtonTooltip": "Sulge"
   },
-  "webMapList": {
-    "owner": "Omanik",
-    "created": "Kuupäev loodud",
-    "modified": "Muutmise kuupäev",
-    "description": "Kirjeldus",
-    "snippet": "Kokkuvõte",
-    "licenseInfo": "Ligipääsu ja kasutuse piirangud",
-    "accessInformation": "Krediidid",
-    "tags": "Märksõnad",
-    "numViews": "Vaatamiste arv",
-    "avgRating": "Hinnang",
-    "noWebMapInGroup": "Konfigureeritud grupp ei kehti või ei ole selle grupiga veel objekte jagatud.",
-    "infoBtnToolTip": "Kaarditeave"
+  "social_media": {
+    "signIntoFacebookTooltip": "Logige sisse Facebooki konto kaudu",
+    "signIntoGooglePlusTooltip": "Logige sisse Google+ kasutajana",
+    "signIntoTwitterTooltip": "Logige sisse Twitteri konto kaudu",
+    "signOutOfFacebookTooltip": "Logi välja Facebookist",
+    "signOutOfGooglePlusTooltip": "Logi välja Google+ kontost",
+    "signOutOfTwitterTooltip": "Logi välja Twitterist"
   },
-  "issueWall": {
-    "noResultsFound": "Objekte ei leitud",
-    "noResultsFoundInCurrentBuffer": "Läheduses objekte ei leitud.",
-    "unableToFetchFeatureError": "Toimingut ei saanud lõpule viia.",
-    "gotoWebmapListTooltip": "Mine pealehele",
-    "gotoMapViewTooltip": "Kaardivaade"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (valikuline)",
+    "requiredFormItemFlag": " (nõutud)",
+    "unsettableRequiredField": "Vajalikku välja pole initsialiseeritud ega ka vormis",
+    "countOfRemainingCharactersTooltip": "Järelejäänud tähemärgid",
+    "attachmentsHeading": "Š_Attachments____ä",
+    "addAttachmentTooltip": "Š_Add attachment_____ä",
+    "removeAttachmentTooltip": "Š_Remove attachment______ä",
+    "cancelButtonLabel": "Tühista",
+    "submitButtonLabel": "Esita"
   },
-  "appHeader": {
-    "myReport": "Minu aruanded",
-    "signIn": "Logi sisse",
-    "signOut": "Logi välja",
-    "signInTooltip": "Logi sisse",
-    "signOutTooltip": "Logi välja",
-    "myReportTooltip": "Kuva minu aruanded"
+  "item_details": {
+    "likeButtonTooltip": "Hääletage selle objekti kohta",
+    "likeButtonInverseTooltip": "Hääl on arvesse võetud",
+    "commentButtonTooltip": "Lisa kommentaar",
+    "gotoMapViewTooltip": "Mine kaardivaatesse",
+    "galleryButtonTooltip": "Vaadake manustatud faile",
+    "commentsListHeading": "Kommentaarid",
+    "noCommentsPlaceholder": "Kommentaarid puuduvad"
   },
-  "geoform": {
-    "enterInformation": "Detailid",
-    "selectAttachments": "Manused",
-    "selectFileText": "Sirvi",
-    "enterLocation": "Asukoht",
-    "reportItButton": "Aruanne It",
-    "cancelButton": "Tühista",
-    "requiredField": "(nõutud)",
-    "selectDefaultText": "Vali&hellip;",
-    "invalidInputValue": "Sisestage kehtiv väärtus.",
-    "noFieldsConfiguredMessage": "Kihi väljadele ei ole konfigureeritud andmete salvestamine.",
-    "invalidSmallNumber": "Palun sisestage täisarv",
-    "invalidNumber": "Palun sisestage täisarv",
-    "invalidFloat": "Palun sisestage arv",
-    "invalidDouble": "Palun sisestage arv",
-    "requiredFields": "Palun sisestage väärtused kõigile nõutud väljadele.",
-    "selectLocation": "Valige oma aruande asukoht.",
-    "numericRangeHintMessage": "${openStrong}Vihje:${closeStrong} Miinimumväärtus ${minValue} ja maksimumväärtus ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}Vihje:${closeStrong} Kuupäeva alampiir ${minValue} ja kuupäeva ülempiir ${maxValue}",
-    "errorsInApplyEdits": "Kommentaari ei saanud esitada.",
-    "attachmentSelectedMsg": "valitud manus(ed)",
-    "attachmentUploadStatus": "Manust /kokku manusest ei õnnestunud üles laadida.",
-    "geoLocationError": "Hetke asukoht pole kättesaadav.",
-    "geoLocationOutOfExtent": "Hetke asukoht on lubatud vahemikust väljas.",
-    "submitButtonTooltip": "Esita",
-    "cancelButtonTooltip": "Tühista",
-    "geoformBackButtonTooltip": "Tagasi aruandelehele"
-  },
-  "locator": {
-    "addressText": "Aadress:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Laius/Pikkus",
-    "invalidSearch": "Tulemusi ei leitud",
-    "locatorPlaceholder": "Sisesta otsingusse aadress",
-    "locationOutOfExtent": "Asukoht on väljaspool aluskaardi piirkonda.",
-    "searchButtonTooltip": "Otsi",
-    "clearButtonTooltip": "Tühjenda otsingu väärtus"
-  },
-  "myIssues": {
-    "title": "Minu aruanded",
-    "myIssuesTooltip": "Minu aruanded",
-    "noResultsFound": "Ühtki aruannet ei leitud"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Hääleta",
-    "likeButtonTooltip": "Hääletage selle aruande kohta",
-    "commentButtonLabel": "Kommentaar",
-    "commentButtonTooltip": "Kommenteerige seda aruannet",
-    "galleryButtonLabel": "Galerii",
-    "galleryButtonTooltip": "Vaadake manustatud dokumente",
-    "mapButtonLabel": "Vaata kaardil",
-    "mapButtonTooltip": "Vaata selle aruande asukohta",
-    "commentsListHeading": "Kommentaari",
-    "unableToUpdateVoteField": "Teie häält ei saa seekord lisada.",
-    "gotoIssueListTooltip": "Liigu aruande loendisse"
-  },
-  "itemList": {
-    "likesForThisItemTooltip": "Selle aruande kohta antud hääled.",
-    "loadMoreButtonText": "Laadi rohkem..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Saada kommentaar",
-    "commentsFormCancelButton": "Tühista",
-    "errorInSubmittingComment": "Kommentaari ei saanud esitada.",
-    "emptyCommentMessage": "Palun sisestage kommentaar.",
-    "placeHolderText": "Sisestage kommentaar",
-    "noCommentsAvailableText": "Ühtki kommentaari ei ole saadaval.",
-    "remainingTextCount": "${0} kasutamata tähemärgid",
-    "showNoText": "Ei"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galerii",
-    "noAttachmentsAvailableText": "Manuseid ei leitud"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Filtreeri loend kaardi järgi",
+    "linkToMapViewOptionTooltip": "Loetle praegusel kaardil nähtavad objektid",
+    "likesForThisItemTooltip": "Selle objekti kohta antud hääled"
   }
 });

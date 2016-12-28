@@ -1,5 +1,4 @@
-﻿/*global define */
-/*
+﻿/*
  | Copyright 2014 Esri
  |
  | Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,129 +16,56 @@
 define({
   "map": {
     "error": "Harita oluşturulamıyor",
-    "zoomInTooltip": "Büyüt",
-    "zoomOutTooltip": "Küçült",
-    "geolocationTooltip": "Geçerli konum"
+    "layerLoad": "Harita tam olarak yüklenemiyor",
+    "missingItemsFeatureLayer": "Uygulamayı bir detay katmanı kullanacak biçimde yapılandırın"
   },
-  "main": {
-    "noGroup": "Yapılandırılan grup yok",
-    "submitReportButtonText": "Rapor Gönder",
-    "gotoListViewTooltip": "Liste görünümü",
-    "noFeatureGeomtery": "Detay görüntülenemiyor"
+  "sidebar_header": {
+    "menuButtonTooltip": "Menüyü göster",
+    "signInButton": "Oturum Açma",
+    "signInButtonTooltip": "Hesabınıza",
+    "signOutButton": "Oturum Kapat",
+    "signOutButtonTooltip": "Oturumu kapat",
+    "helpButtonLabel": "Yardım",
+    "helpButtonTooltip": "Daha fazla bilgi",
+    "gotoListViewLabel": "Liste Görünümü",
+    "gotoListViewTooltip": "List görünümüne git",
+    "gotoMapViewLabel": "Harita Görünümü",
+    "gotoMapViewTooltip": "Harita görünümüne git"
   },
-  "signin": {
-    "guestSigninText": "Konuk olarak devam et",
-    "signInOrText": "Veya",
-    "signinOptionsText": "Şununla oturum aç:",
-    "noGroupNameText": "Oturum açın",
-    "guestLoginTooltip": "Konuk olarak oturum aç",
-    "facebookLoginTooltip": "Facebook ile oturum aç",
-    "twitterLoginTooltip": "Twitter ile oturum aç",
-    "googlePlusLoginTooltip": "Google+ ile oturum aç",
-    "agolLoginTooltip": "ArcGIS ile oturum aç"
+  "popup_Close": {
+    "closeButtonTooltip": "Kapat"
   },
-  "webMapList": {
-    "owner": "Sahibi",
-    "created": "Oluşturulma tarihi",
-    "modified": "Değiştirme tarihi:",
-    "description": "Tanım",
-    "snippet": "Özet",
-    "licenseInfo": "Kısıtlamalara eriş ve bunları kullan",
-    "accessInformation": "Katkı Yapanlar",
-    "tags": "Etiketler",
-    "numViews": "Görüntülenme sayısı",
-    "avgRating": "Derecelendirme",
-    "noWebMapInGroup": "Yapılandırılmış grup geçersiz veya bu grupla henüz öğe paylaşılmamış.",
-    "infoBtnToolTip": "Harita bilgileri"
+  "social_media": {
+    "signIntoFacebookTooltip": "Facebook ile oturum aç",
+    "signIntoGooglePlusTooltip": "Google+ ile oturum aç",
+    "signIntoTwitterTooltip": "Twitter ile oturum aç",
+    "signOutOfFacebookTooltip": "Facebook oturumunu kapat",
+    "signOutOfGooglePlusTooltip": "Google+ oturumunu kapat",
+    "signOutOfTwitterTooltip": "Twitter oturumunu kapat"
   },
-  "issueWall": {
-    "noResultsFound": "Detay bulunamadı",
-    "noResultsFoundInCurrentBuffer": "Yakınınızda detay bulunamadı",
-    "unableToFetchFeatureError": "işlem tamamlanamıyor",
-    "gotoWebmapListTooltip": "Ana listeye git",
-    "gotoMapViewTooltip": "Harita görünümü"
+  "dynamic_form": {
+    "optionalFormItemFlag": " (tercihe göre)",
+    "requiredFormItemFlag": " (gerekli)",
+    "unsettableRequiredField": "Gerekli bir alan başlatılamadı veya form içinde değil",
+    "countOfRemainingCharactersTooltip": "Karakter kaldı",
+    "attachmentsHeading": "ı_Attachments____İ",
+    "addAttachmentTooltip": "ı_Add attachment_____İ",
+    "removeAttachmentTooltip": "ı_Remove attachment______İ",
+    "cancelButtonLabel": "İptal",
+    "submitButtonLabel": "Gönder"
   },
-  "appHeader": {
-    "myReport": "Raporlarım",
-    "signIn": "Oturum Açma",
-    "signOut": "Oturum Kapat",
-    "signInTooltip": "Hesabınıza",
-    "signOutTooltip": "Oturumu kapat",
-    "myReportTooltip": "Raporlarımı görüntüle"
-  },
-  "geoform": {
-    "enterInformation": "Ayrıntılar",
-    "selectAttachments": "Eklentiler",
-    "selectFileText": "...",
-    "enterLocation": "Konum",
-    "reportItButton": "Bildir",
-    "cancelButton": "İptal",
-    "requiredField": "(gerekli)",
-    "selectDefaultText": "Seç&hellip;",
-    "invalidInputValue": "Geçerli değer girin.",
-    "noFieldsConfiguredMessage": "Katman alanları veri yakalamak üzere yapılandırılmamış",
-    "invalidSmallNumber": "Tamsayı girin",
-    "invalidNumber": "Tamsayı girin",
-    "invalidFloat": "Lütfen bir sayı girin",
-    "invalidDouble": "Lütfen bir sayı girin",
-    "requiredFields": "Tüm gerekli alanlar için değer girin",
-    "selectLocation": "Raporunuzun konumunu seçin",
-    "numericRangeHintMessage": "${openStrong}İpucu:${closeStrong} Minimum değer ${minValue} ve Maksimum değer ${maxValue}",
-    "dateRangeHintMessage": "${openStrong}İpucu:${closeStrong} Minimum Tarih ${minValue} ve Maksimum Tarih ${maxValue}",
-    "errorsInApplyEdits": "Rapor gönderilemedi",
-    "attachmentSelectedMsg": "ek seçildi",
-    "attachmentUploadStatus": "${failed} / ${total} ek yüklenemedi",
-    "geoLocationError": "Geçerli konum kullanılamıyor",
-    "geoLocationOutOfExtent": "Geçerli konum altlık haritası yayılımı dışında",
-    "submitButtonTooltip": "Gönder",
-    "cancelButtonTooltip": "İptal",
-    "geoformBackButtonTooltip": "Rapor listesine dön"
-  },
-  "locator": {
-    "addressText": "Adres:",
-    "usngText": "USNG",
-    "mgrsText": "MGRS",
-    "latLongText": "Enlem/Boylam",
-    "invalidSearch": "Sonuç bulunamadı",
-    "locatorPlaceholder": "Aranacak adres gir",
-    "locationOutOfExtent": "Bulunan adres altlık haritası yayılımı dışında",
-    "searchButtonTooltip": "Ara",
-    "clearButtonTooltip": "Arama değerini temizle"
-  },
-  "myIssues": {
-    "title": "Raporlarım",
-    "myIssuesTooltip": "Raporlarım",
-    "noResultsFound": "Herhangi bir rapor bulunamadı"
-  },
-  "itemDetails": {
-    "likeButtonLabel": "Oy ver",
-    "likeButtonTooltip": "Bu rapora oy ver",
-    "commentButtonLabel": "Açıklama",
-    "commentButtonTooltip": "Bu rapora yorum yap",
-    "galleryButtonLabel": "Galeri",
-    "galleryButtonTooltip": "Ekli belgeleri incele",
-    "mapButtonLabel": "Haritada görüntüle",
-    "mapButtonTooltip": "Bu raporun konumunu görüntüle",
+  "item_details": {
+    "likeButtonTooltip": "Bu öğeye oy ver",
+    "likeButtonInverseTooltip": "Sayılan oy",
+    "commentButtonTooltip": "Yorum ekle",
+    "gotoMapViewTooltip": "Harita görünümüne git",
+    "galleryButtonTooltip": "Ekteki dosyaları incele",
     "commentsListHeading": "Yorumlar",
-    "unableToUpdateVoteField": "Oyunuz şu anda sayılamıyor.",
-    "gotoIssueListTooltip": "Rapor listesine git"
+    "noCommentsPlaceholder": "Yorum yok"
   },
-  "itemList": {
-    "likesForThisItemTooltip": "Bu rapora verilen oylar",
-    "loadMoreButtonText": "Daha Fazla Yükle..."
-  },
-  "comment": {
-    "commentsFormSubmitButton": "Yorum Gönder",
-    "commentsFormCancelButton": "İptal",
-    "errorInSubmittingComment": "Yorum gönderilemedi.",
-    "emptyCommentMessage": "Lütfen bir yorum girin.",
-    "placeHolderText": "Yorum yaz",
-    "noCommentsAvailableText": "Kullanılabilir yorum yok",
-    "remainingTextCount": "${0} karakter kaldı",
-    "showNoText": "Hayır"
-  },
-  "gallery": {
-    "galleryHeaderText": "Galeri",
-    "noAttachmentsAvailableText": "Herhangi bir eklenti bulunamadı"
+  "item_list": {
+    "linkToMapViewOptionLabel": "Listeyi haritaya göre filtrele",
+    "linkToMapViewOptionTooltip": "Geçerli haritada görünen detayları listele",
+    "likesForThisItemTooltip": "oy, bu öğe için"
   }
 });
