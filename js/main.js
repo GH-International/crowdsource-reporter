@@ -137,10 +137,17 @@ define([
                 }
 
                 //EGE: get the parameter passed through the URL 
+                // filter is passed as ?name 
                   urlObject = esri.urlToObject(document.location.href);
                   urlObject.query = urlObject.query || {};
                   if(urlObject.query.name){
                      this.config.filterName = urlObject.query.name;
+
+                  }
+                //supervisor parameter puts app in 'admin mode'
+                if(urlObject.query.supervisor){
+                     this.config.supervisor = urlObject.query.supervisor;
+
                   }
 
                 promise = this._launch(itemInfo);
@@ -310,7 +317,13 @@ define([
 
                 topic.subscribe("helpSelected", lang.hitch(this, function () {
                     this._helpDialogContainer.set("displayTitle", "");
-                    this._helpDialogContainer.set("displayText", this.config.displayText + " (filter: " + this.config.filterName+")");
+
+                    if (this.config.filterName!== undefined){
+                        this._helpDialogContainer.set("displayText", this.config.displayText + " (filter: " + this.config.filterName+")");
+                    }
+                    else{
+                     this._helpDialogContainer.set("displayText", this.config.displayText);   
+                    }
                     this._helpDialogContainer.show();
                 }));
                 this._sidebarHdr.updateHelp(true);
@@ -372,6 +385,11 @@ define([
                     // If the screen is narrow, switch to the list view; if it isn't, switching to list view is
                     // a no-op because that's the normal state for wider windows
                     topic.publish("showListViewClicked");
+                }));
+
+                //Poll business POC - triggered when user clicks on 'poll' in Supervisor mode
+                topic.subscribe("pollBusiness", lang.hitch(this, function (item) {
+                    alert('poll ' + item.attributes.Name);
                 }));
 
                 /**

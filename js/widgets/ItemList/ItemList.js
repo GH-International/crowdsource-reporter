@@ -211,6 +211,7 @@ define([
             itemVotes = this.getItemVotes(item);
 
 
+
             itemSummaryDiv = domConstruct.create("div", {
                 "class": "itemSummary",
                 "click": lang.partial(this.summaryClick, this, item)
@@ -222,17 +223,35 @@ define([
                 "innerHTML": itemTitle
             }, itemSummaryDiv);
 
+
+            if(this.appConfig.supervisor!=undefined){
+                if(this.appConfig.supervisor.toLowerCase()=='true'){
+                    
+                    favDiv = domConstruct.create("div", {
+                        "class": "itemFav",
+                        "click": lang.partial(console.log('poll..' +item)),                      
+                        "title": this.i18n.likesForThisItemTooltip
+                    }, itemSummaryDiv);
+
+                    domConstruct.create("div", {
+                        "class": "itemPollBus",
+                        //"click": alert('poll ' + itemTitle ),
+                        "innerHTML": 'Poll'
+                    }, favDiv);
+
+                    iconDiv = domConstruct.create("div", {
+                        "class": "fav"
+                    }, favDiv);
+                }
+            }
+
             // If we're displaying votes, create the count and icon displays
             if (itemVotes) {
                 if (itemVotes.needSpace) {
                     domClass.add(itemTitleDiv, "itemListTitleOverride");
                 }
 
-                favDiv = domConstruct.create("div", {
-                    "class": "itemFav",
-                    "title": this.i18n.likesForThisItemTooltip
-                }, itemSummaryDiv);
-
+    
                 domConstruct.create("div", {
                     "class": "itemVotes",
                     "innerHTML": itemVotes.label
@@ -341,6 +360,10 @@ define([
         summaryClick: function (self, feat, evt) {
             // 'this' = row click
             topic.publish("itemSelected", feat);
+            
+            if(evt.srcElement.className=='itemPollBus'){
+                topic.publish("pollBusiness",feat);
+            }
         }
 
     });
