@@ -164,12 +164,8 @@ define([
          * @param {function} [compareFunction] Function to compare two items (a, b) for the desired sort order; returns
          * <0 value if a < b, 0 if a = b, >0 if a > b
          */
-<<<<<<< HEAD
-        setItems: function (items, filter) {
-            
-=======
+        // setItems: function (items, filter) {
         setItems: function (items, compareFunction) {
->>>>>>> origin/master
             this.items = items;
             this.clearList();
             this.buildList(compareFunction);

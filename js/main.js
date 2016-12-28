@@ -99,6 +99,7 @@ define([
         config: {},
         map: null,
         mapData: null,
+        initExtent: null,
         _linkToMapView: false,
         _currentlyCommenting: false,
         _hasCommentTable: false,
@@ -283,6 +284,11 @@ define([
                     if (this._currentlyCommenting) {
                         topic.publish("cancelForm");
                     }
+
+                    //reset zoom
+                    //this.map.setExtent(this.map.geographicExtent.expand(6));
+                    this.map.setExtent(initExtent);
+                
                     topic.publish("showPanel", "itemsList");
                 }));
 
@@ -786,6 +792,7 @@ define([
                 // any custom options you defined for the template. In this example that is the 'theme' property.
                 // Here we'll use it to update the application to match the specified color theme.
                 this.map = response.map;
+                initExtent = this.map.geographicExtent;
 
                 // Start up home widget
                 homeButton = new HomeButton({
