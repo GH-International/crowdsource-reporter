@@ -449,8 +449,8 @@ define([
                 }));
 
               //EGE - pull out status field if available and call function to update primary table
-                if (typeof comment.Open_Closed !== 'undefined') {
-                    this.updateMainFeatureLayer(comment.Open_Closed,item);
+                if (typeof comment.attributes.Open_Closed !== 'undefined') {
+                    this.updateMainFeatureLayer(comment.attributes.Open_Closed,item);
                 }
         },
 
